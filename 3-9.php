@@ -23,6 +23,13 @@
     		}
     		echo "<br/>";
     	}
+
+        echo "<pre>";
+        var_dump(array(0,1,2,3));
+        print_r(array(0,1,2,3));
+        print_r($string);
+        var_dump(null);
+        echo "</pre>";
     ?>
 </body>
 </html>

@@ -12,6 +12,7 @@
 	<?php
 		//定义一个数组同时给数组所有元素赋值
     	$string = array("string1","string2","string3","string4","string5");
+    	echo implode("<br>", $string);
 
     	for($i=0; $i<count($string); $i++) {
     		echo $string[$i];

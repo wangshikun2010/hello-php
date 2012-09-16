@@ -11,10 +11,10 @@
 <body>
     <?php
     	echo "所使用的文件名是：";
-    	echo _FILE_;
+    	echo __FILE__;
     	echo "<br>";
     	echo "文件的行数：";
-    	echo _LINE_;
+    	echo __LINE__;
     	echo "<br>";
     	echo "php的版本：";
     	echo PHP_VERSION;

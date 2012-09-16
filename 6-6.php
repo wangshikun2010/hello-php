@@ -18,7 +18,8 @@
     	$a[5] = 1;
     	$a[6] = 4;
     	$a[7] = 3;
-    	print_r(array_count_values($a));
+        print_r(array_count_values($a));
+        print_r($a);
     ?>
 </body>
 </html>

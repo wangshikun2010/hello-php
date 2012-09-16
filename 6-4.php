@@ -10,34 +10,37 @@
 </head>
 <body>
 
-    <?php
-        //看一下哪里出错了
-    	function num($num1, $num2) {
-    		if ($num1>$num2) {
-    			$temp = $num1;
-    			$num1 = $num2;
-    			$num2 = $temp;
-    		}
+<?php
+    //看一下哪里出错了
+	function num($num1, $num2) {
+		if ($num1>$num2) {
+			$temp = $num1;
+			$num1 = $num2;
+			$num2 = $temp;
+		}
 
-    		for ($i=$num1; $i<$num2; $i++) {
-    			if ($i%2 == 0) {
-    				$t[$j] = $i;
-    				$j++;
-    			}
-    		}
+        $t = array();
+        $j = 0;
 
-    		return $t;
-    	}
+		for ($i=$num1; $i<$num2; $i++) {
+			if ($i%2 == 0) {
+				$t[$j] = $i;
+				$j++;
+			}
+		}
 
-    	$a = 3;
-    	$b = 20;
-    	$c = num($a,$b);
+		return $t;
+	}
 
-    	echo $a."到".$b."之间的偶数是：";
-    	for ($i=0; $i<count($c); $i++) {
-    		echo $c[$i];
-    		echo "<br/>";
-    	}
-    ?>
+	$a = 3;
+	$b = 20;
+	$c = num($a,$b);
+
+	echo $a."到".$b."之间的偶数是：";
+	for ($i=0; $i<count($c); $i++) {
+		echo $c[$i];
+		echo "<br/>";
+	}
+?>
 </body>
 </html>

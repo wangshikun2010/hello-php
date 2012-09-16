@@ -21,5 +21,12 @@
     		echo "第".$i."次循环<br/>";
     	}
     ?>
+
+    <img src="http://www.shijun.com/my-php-mysql/7-4.php?n=1&m=10" alt="" width="440" height="400">
+    <img src="http://www.shijun.com/my-php-mysql/7-4.php?n=2" alt="" width="440" height="400">
+    <img src="http://www.shijun.com/my-php-mysql/7-4.php?n=3" alt="" width="440" height="400">
+    <img src="http://www.shijun.com/my-php-mysql/7-4.php?n=4" alt="" width="440" height="400">
+    <img src="http://www.shijun.com/my-php-mysql/7-4.php?n=5" alt="" width="440" height="400">
+
 </body>
 </html>

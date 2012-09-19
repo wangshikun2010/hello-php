@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"s",
+				"somevar"
+			],
+			[
+				"var",
+				"variable2  (variable)"
+			],
+			[
+				"wh",
+				"white"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"num",
+				"num2"
+			],
+			[
 				"link",
 				"link"
 			],
@@ -16,34 +36,66 @@
 	"buffers":
 	[
 		{
-			"file": "1-1.php",
+			"file": "3-4-4.php",
 			"settings":
 			{
-				"buffer_size": 325,
+				"buffer_size": 677,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "1-2.php",
+			"file": "3-4-5.php",
 			"settings":
 			{
-				"buffer_size": 365,
+				"buffer_size": 395,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "1-3.php",
+			"file": "3-4-6.php",
 			"settings":
 			{
-				"buffer_size": 367,
+				"buffer_size": 349,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "1-4.php",
+			"file": "3-4-7.php",
 			"settings":
 			{
-				"buffer_size": 336,
+				"buffer_size": 239,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "3-6-2.php",
+			"settings":
+			{
+				"buffer_size": 492,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "3-6-3.php",
+			"settings":
+			{
+				"buffer_size": 73,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "3-6-4.php",
+			"settings":
+			{
+				"buffer_size": 272,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "3-6-5.php",
+			"settings":
+			{
+				"buffer_size": 128,
 				"line_ending": "Windows"
 			}
 		}
@@ -112,6 +164,55 @@
 	},
 	"file_history":
 	[
+		"/C/Windows/System32/3-4-4.php",
+		"/F/my-php-mysql/7-6.php",
+		"/F/my-php-mysql/7-5.php",
+		"/F/my-php-mysql/7-4.php",
+		"/F/my-php-mysql/7-3.php",
+		"/F/my-php-mysql/7-2.php",
+		"/F/my-php-mysql/7-1.php",
+		"/F/my-php-mysql/6-11.php",
+		"/F/my-php-mysql/6-10.php",
+		"/F/my-php-mysql/6-9.php",
+		"/F/my-php-mysql/6-8.php",
+		"/F/my-php-mysql/6-7.php",
+		"/F/my-php-mysql/6-6.php",
+		"/F/my-php-mysql/6-5.php",
+		"/F/my-php-mysql/6-4.php",
+		"/F/my-php-mysql/6-3.php",
+		"/F/my-php-mysql/6-2.php",
+		"/F/my-php-mysql/6-1.php",
+		"/F/my-php-mysql/5-10.php",
+		"/F/my-php-mysql/php.sublime-workspace",
+		"/F/my-php-mysql/3-1.php",
+		"/F/my-php-mysql/5-9.php",
+		"/F/my-php-mysql/5-8.php",
+		"/F/my-php-mysql/5-7.php",
+		"/F/my-php-mysql/5-6.php",
+		"/F/my-php-mysql/5-5.php",
+		"/F/my-php-mysql/5-4.php",
+		"/F/my-php-mysql/5-3.php",
+		"/F/my-php-mysql/5-2.php",
+		"/F/my-php-mysql/5-1.php",
+		"/F/my-php-mysql/4-5.php",
+		"/F/my-php-mysql/4-4.php",
+		"/F/my-php-mysql/4-3.php",
+		"/F/my-php-mysql/4-2.php",
+		"/F/my-php-mysql/4-1.php",
+		"/C/Users/wangshikun/AppData/Roaming/Sublime Text 2/Packages/SublimeTmpl/4-1.php",
+		"/C/Users/wangshikun/AppData/Roaming/Sublime Text 2/Packages/SublimeTmpl/Main.sublime-menu",
+		"/F/my-php-mysql/3-2.php",
+		"/F/my-php-mysql/3-10.php",
+		"/F/my-php-mysql/3-9.php",
+		"/F/my-php-mysql/3-8.php",
+		"/F/my-php-mysql/3-7.php",
+		"/F/my-php-mysql/3-6.php",
+		"/F/my-php-mysql/3-5.php",
+		"/F/my-php-mysql/3-4.php",
+		"/F/my-php-mysql/1-4.php",
+		"/F/my-php-mysql/1-3.php",
+		"/F/my-php-mysql/1-2.php",
+		"/F/my-php-mysql/1-1.php",
 		"/F/my-php-mysql/helloworld.php",
 		"/F/my-php-mysql/第一章/1-1.php",
 		"/F/my-php-mysql/第一章/1-1.html",
@@ -157,6 +258,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"count",
+			"max",
+			"大",
+			"\"p\"",
+			"v",
 			"www.google.com",
 			"getElementById",
 			"theme",
@@ -169,6 +275,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"min",
+			"小",
+			"\"<p>\""
 		],
 		"reverse": false,
 		"show_context": true,
@@ -179,23 +288,23 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 7,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "1-1.php",
+					"file": "3-4-4.php",
 					"settings":
 					{
-						"buffer_size": 325,
+						"buffer_size": 677,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								676,
+								676
 							]
 						],
 						"settings":
@@ -203,25 +312,25 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 381.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "1-2.php",
+					"file": "3-4-5.php",
 					"settings":
 					{
-						"buffer_size": 365,
+						"buffer_size": 395,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								342,
-								342
+								395,
+								395
 							]
 						],
 						"settings":
@@ -236,18 +345,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "1-3.php",
+					"file": "3-4-6.php",
 					"settings":
 					{
-						"buffer_size": 367,
+						"buffer_size": 349,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								350,
-								350
+								298,
+								298
 							]
 						],
 						"settings":
@@ -262,18 +371,123 @@
 				},
 				{
 					"buffer": 3,
-					"file": "1-4.php",
+					"file": "3-4-7.php",
 					"settings":
 					{
-						"buffer_size": 336,
+						"buffer_size": 239,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								313,
-								313
+								208,
+								208
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "3-6-2.php",
+					"settings":
+					{
+						"buffer_size": 492,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								445,
+								445
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 69.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "3-6-3.php",
+					"settings":
+					{
+						"buffer_size": 73,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								73,
+								73
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "3-6-4.php",
+					"settings":
+					{
+						"buffer_size": 272,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								272,
+								272
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "3-6-5.php",
+					"settings":
+					{
+						"buffer_size": 128,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								127,
+								127
 							]
 						],
 						"settings":
@@ -332,7 +546,7 @@
 		[
 			[
 				"",
-				"第一章/1-1.html"
+				"3-1.php"
 			],
 			[
 				"js",

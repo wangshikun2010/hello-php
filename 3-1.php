@@ -16,7 +16,7 @@
 
     	define("message","this is a define",false);
     	echo message."<br/>";
-    	echo MESSAGE."<br/>";
+    	//echo MESSAGE."<br/>";
 
     	$test = "message";
     	echo constant($test)."<br/>";

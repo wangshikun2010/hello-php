@@ -33,11 +33,19 @@ print_r($even);
 echo "<br/>";
 
 
-//Will read the file string with "|" is divided into an array
-while($line = fgets($user_file,4096)) {
+// File IO
+// Will read the file string with "|" is divided into an array
+$handle = fopen("data.txt", "r");
+while(($line = fgets($handle, 4096)) !== false) {
 	list($name,$occupation,$color) = explode("|",$line);
 	echo "Name: $name<br/>";
 	echo "occupation: $occupation<br/>";
 	echo "color: $color<br/>";
+	echo "<br/>";
 }
+fclose($handle);
 
+
+echo "<pre>";
+print_r(file("data.txt"));
+echo "</pre>";

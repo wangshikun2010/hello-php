@@ -36,3 +36,25 @@ function number($price,$tax) {
 number(15.00,.075);
 echo convert_pound(15);
 
+/**
+ * compact: 根据现有的变量构造1个数组
+ * extract: 将关联数组中的键值导出为变量
+ */
+
+function get_user() {
+	$name = "wangshikun";
+	$age = 21;
+
+	return compact("name", "age");
+	return array(
+		"name" => $name,
+		"age" => $age,
+	);
+}
+
+$user = get_user();
+extract($user);
+
+// extract(get_user());
+// $name =
+// $age =

@@ -1,0 +1,912 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cap",
+				"capitalic"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"Ar",
+				"ArticleCategory"
+			],
+			[
+				"lay",
+				"layout"
+			],
+			[
+				"result",
+				"results"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"min",
+				"minwidth"
+			],
+			[
+				"is_o",
+				"is_owner"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"endfo",
+				"endforeach"
+			],
+			[
+				"Buil",
+				"BuildingRoom"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"floo",
+				"floor"
+			],
+			[
+				"buil",
+				"building"
+			],
+			[
+				"php",
+				"php"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"under",
+				"underscore"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"build",
+				"building_block_id"
+			],
+			[
+				"building_id",
+				"building_id"
+			],
+			[
+				"ajax",
+				"ajax	Google AJAX Libraries: Dojo"
+			],
+			[
+				"building",
+				"building_id"
+			],
+			[
+				"Building",
+				"buildingBlock"
+			],
+			[
+				"is",
+				"isAjax"
+			],
+			[
+				"before",
+				"beforeRender"
+			],
+			[
+				"Bui",
+				"BuildingBlock"
+			],
+			[
+				"Build",
+				"Building"
+			],
+			[
+				"int",
+				"intval"
+			],
+			[
+				"res",
+				"results"
+			],
+			[
+				"afterF",
+				"afterFind"
+			],
+			[
+				"ro",
+				"room_count"
+			],
+			[
+				"create",
+				"create"
+			],
+			[
+				"floor",
+				"floor_count"
+			],
+			[
+				"build_",
+				"building_block_id"
+			],
+			[
+				"crete",
+				"created"
+			],
+			[
+				"User",
+				"UserProfile"
+			],
+			[
+				"inse",
+				"insertAfter"
+			],
+			[
+				"inser",
+				"insertBefore"
+			],
+			[
+				"print_",
+				"print_array"
+			],
+			[
+				"exp",
+				"explode"
+			],
+			[
+				"quick",
+				"quicksort"
+			],
+			[
+				"pre",
+				"previous"
+			],
+			[
+				"array",
+				"array"
+			],
+			[
+				"lic",
+				"license"
+			],
+			[
+				"de",
+				"delta"
+			],
+			[
+				"on",
+				"onScrollEnd"
+			],
+			[
+				"del",
+				"deltaY"
+			],
+			[
+				"com",
+				"com"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"pa",
+				"panelScrollers"
+			],
+			[
+				"pane",
+				"panel-inner"
+			],
+			[
+				"sc",
+				"scrollTo"
+			],
+			[
+				"d",
+				"device-width"
+			],
+			[
+				"tab",
+				"tabIndex"
+			],
+			[
+				"no",
+				"none"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"backg",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"todo",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"save",
+				"File: Save All"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"settings",
+				"Preferences: Settings - User"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"tod",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"create ",
+				"Gist: Create Public Gist"
+			],
+			[
+				"gist",
+				"Gist: Create Public Gist"
+			],
+			[
+				"li",
+				"Package Control: List Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ter",
+				"Preferences: Terminal Key Bindings – Default"
+			],
+			[
+				"termi",
+				"Preferences: Terminal Key Bindings – User"
+			],
+			[
+				"to",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"list ",
+				"Package Control: List Packages"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Git: Init"
+			],
+			[
+				"z",
+				"Zen Coding: Zen as you type"
+			],
+			[
+				"zen",
+				"Zen Coding: Wrap zen as you type"
+			],
+			[
+				"thml",
+				"Tidy HTML"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"git sa",
+				"Git: Status"
+			],
+			[
+				"repase",
+				"DocBlockr: Reparse comment block"
+			],
+			[
+				"do",
+				"DocBlockr: Reparse comment block"
+			],
+			[
+				"doc",
+				"DocBlockr: Reparse comment block"
+			],
+			[
+				"TO",
+				"Show TODOs: Open files only"
+			],
+			[
+				"sava",
+				"Project: Save As"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"git r",
+				"Git: Graph Current File"
+			],
+			[
+				"git s",
+				"Git: Status"
+			],
+			[
+				"package",
+				"Package Control: Discover Packages"
+			],
+			[
+				"TODO",
+				"Show TODOs: Open files only"
+			],
+			[
+				"show",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"ali",
+				"Preferences: Alignment File Settings – Default"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"sta",
+				"Stackoverflow: Search from Input"
+			],
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"",
+				"Format: Javascript"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"Snippet: Create a skeleton test method with a data provider"
+			],
+			[
+				"ze",
+				"Zen Coding: Split or join tag"
+			],
+			[
+				"align",
+				"Preferences: Alignment File Settings – Default"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pa in",
+				"Package Control: Install Package"
+			],
+			[
+				"pa li",
+				"Package Control: List Packages"
+			],
+			[
+				"packa in",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 514.0
+	},
+	"console":
+	{
+		"height": 266.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/htdocs/my-php-mysql/p5-4.php",
+		"/E/Documents/GitHub/easycms/app/View/Layouts/default.responsive.ctp",
+		"/E/Documents/GitHub/easycms/app/webroot/css/app.default.responsive.css",
+		"/E/Documents/GitHub/easycms/app/View/Layouts/default.bak.ctp",
+		"/E/Documents/GitHub/easycms/.gitignore",
+		"/E/Documents/GitHub/easycms/app/View/Elements/categories.admin.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Elements/categories.default.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Users/admin_login.ctp",
+		"/E/Documents/GitHub/easycms/app/Controller/ToolkitController.php",
+		"/E/Documents/GitHub/easycms/app/tmp/translation_fixtures.php",
+		"/E/Documents/GitHub/easycms/app/Controller/AppController.php",
+		"/E/Documents/GitHub/easycms/app/View/Downloads/admin_add.ctp",
+		"/E/Documents/GitHub/easycms/app/Controller/DownloadsController.php",
+		"/E/Documents/GitHub/easycms/app/Config/clusters/develop/bootstrap.php",
+		"/E/Documents/GitHub/easycms/app/Lib/PinyinTranslator.php",
+		"/D/htdocs/my-php-mysql/p4-3.php",
+		"/E/Documents/GitHub/plugins/Media/Model/Attachment.php",
+		"/E/Documents/GitHub/plugins/cakephp-plugins.sublime-project",
+		"/E/Documents/GitHub/plugins/Media/Model/Behavior/CouplerBehavior.php",
+		"/E/Documents/GitHub/easycms/app/View/Tenants/admin_view.ctp",
+		"/E/Documents/GitHub/easycms/app/Controller/GroupsController.php",
+		"/E/Documents/GitHub/easycms/app/Controller/CategoriesController.php",
+		"/E/Documents/GitHub/easycms/app/View/Categories/admin_index.ctp",
+		"/E/Documents/GitHub/easycms/app/Controller/AuthsController.php",
+		"/E/Documents/GitHub/easycms/app/Controller/UsersController.php",
+		"/E/Documents/GitHub/easycms/app/View/Categories/admin_add.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Categories/admin_edit.ctp",
+		"/E/Documents/GitHub/plugins/Media/Controller/AttachmentsController.php",
+		"/E/Documents/GitHub/easycms/app/View/Categories/admin_recycle_bin.ctp",
+		"/E/Documents/GitHub/easycms/app/Locale/packages.php",
+		"/E/Documents/GitHub/easycms/app/webroot/css/app.admin.css",
+		"/E/Documents/GitHub/easycms/app/View/BuildingRooms/admin_view.ctp",
+		"/E/Documents/GitHub/easycms/app/View/BuildingBlocks/admin_view.ctp",
+		"/E/Documents/GitHub/easycms/app/View/BuildingResidents/admin_view.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Layouts/default.ctp",
+		"/E/Documents/GitHub/cakephp/lib/Cake/Controller/Controller.php",
+		"/E/Documents/GitHub/easycms/app/webroot/css/app.login.css",
+		"/E/Documents/GitHub/easycms/app/View/Layouts/login.ctp",
+		"/E/Documents/GitHub/easycms/app/Model/Category.php",
+		"/E/Documents/GitHub/easycms/app/Controller/PostsController.php",
+		"/E/Documents/GitHub/easycms/app/Config/routes.php",
+		"/E/Documents/GitHub/easycms/app/Controller/ArticlesController.php",
+		"/E/Documents/GitHub/easycms/app/Controller/ArticleCategoriesController.php",
+		"/E/Documents/GitHub/easycms/app/Model/DownloadCategory.php",
+		"/E/Documents/GitHub/easycms/app/Model/EthnicGroup.php",
+		"/E/Documents/GitHub/easycms/app/Model/ArticleCategory.php",
+		"/E/Documents/GitHub/plugins/Utils/Model/Behavior/InheritableBehavior.php",
+		"/E/Documents/GitHub/cakephp/lib/Cake/Model/Behavior/TreeBehavior.php",
+		"/E/Documents/GitHub/easycms/app/Config/database.php",
+		"/E/Documents/GitHub/easycms/app/View/BuildingResidents/admin_index.ctp",
+		"/E/Documents/GitHub/easycms/app/Config/clusters/develop/database.php",
+		"/E/Documents/GitHub/easycms/app/Controller/DownloadCategoriesController.php",
+		"/E/Documents/GitHub/easycms/app/View/Layouts/admin.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Pages/home.ctp",
+		"/E/Documents/GitHub/easycms/app/webroot/css/app.default.css",
+		"/E/Documents/GitHub/easycms/app/webroot/css/app.mobile.css",
+		"/E/Documents/GitHub/easycms/app/webroot/css/bootstrap-2.0.2/bootstrap.css",
+		"/E/Documents/GitHub/easycms/app/webroot/css/bootstrap-2.1.1/bootstrap.css",
+		"/E/Documents/GitHub/easycms/app/webroot/css/bootstrap-2.1.1/bootstrap.min.css",
+		"/E/Documents/GitHub/easycms/app/webroot/css/bootstrap-2.0.2/bootstrap.cerulean.min.css",
+		"/E/Documents/GitHub/easycms/app/Controller/EthnicGroupsController.php",
+		"/E/Documents/GitHub/easycms/app/Controller/BuildingsController.php",
+		"/E/Documents/GitHub/easycms/app/Controller/BuildingBlocksController.php",
+		"/E/Documents/GitHub/easycms/app/View/BuildingResidents/admin_add.ctp",
+		"/E/Documents/GitHub/easycms/app/View/BuildingBlocks/admin_edit.ctp",
+		"/E/Documents/GitHub/easycms/app/View/BuildingResidents/admin_recycle_bin.ctp",
+		"/E/Documents/GitHub/easycms/app/Controller/BuildingResidentsController.php",
+		"/E/Documents/GitHub/easycms/app/Controller/BuildingRoomsController.php",
+		"/E/Documents/GitHub/easycms/app/View/Buildings/admin_view.ctp",
+		"/E/Documents/GitHub/easycms/app/Model/BuildingRoom.php",
+		"/E/Documents/GitHub/easycms/app/View/Elements/building_block.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Elements/building_legend.ctp",
+		"/E/Documents/GitHub/easycms/app/Model/BuildingResident.php",
+		"/E/Documents/GitHub/easycms/app/Config/Schema/schema_local.sql",
+		"/E/Documents/GitHub/easycms/app/Model/BuildingBlock.php",
+		"/E/Documents/GitHub/easycms/app/View/BuildingBlocks/admin_recycle_bin.ctp",
+		"/E/Documents/GitHub/easycms/app/View/BuildingBlocks/admin_index.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Buildings/admin_recycle_bin.ctp",
+		"/E/Documents/GitHub/easycms/app/View/BuildingBlocks/admin_ajax_index.ctp",
+		"/E/Documents/GitHub/easycms/app/View/BuildingResidents/admin_edit.ctp",
+		"/E/Documents/GitHub/easycms/app/Console/Templates/bootstrap/actions/controller_actions.ctp",
+		"/E/Documents/GitHub/easycms/app/Console/Templates/bootstrap/views/view.ctp",
+		"/E/Documents/GitHub/easycms/app/Console/Templates/bootstrap/views/recycle_bin.ctp",
+		"/E/Documents/GitHub/easycms/app/Console/Templates/bootstrap/views/index.ctp",
+		"/E/Documents/GitHub/easycms/app/View/BuildingResidents/admin_view2.ctp",
+		"/E/Documents/GitHub/easycms/app/View/BuildingResidents/view.ctp",
+		"/E/Documents/GitHub/easycms/app/View/BuildingRooms/admin_ajax_index.ctp",
+		"/D/xampp/phpMyAdmin/libraries/config.default.php",
+		"/D/xampp/phpMyAdmin/libraries/common.inc.php",
+		"/D/xampp/phpMyAdmin/config.inc.php",
+		"/E/Documents/GitHub/easycms/app/View/Elements/menu.ctp",
+		"/E/Documents/GitHub/easycms/app/Config/enums.php",
+		"/E/Documents/GitHub/easycms/app/Config/core.php",
+		"/E/Documents/GitHub/easycms/app/Config/media.user.php",
+		"/E/Documents/GitHub/easycms/app/Config/clusters.php",
+		"/E/Documents/GitHub/easycms/app/View/Users/admin_add.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Users/admin_edit.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Users/admin_profile.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Tenants/admin_add.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Tenants/admin_edit.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Posts/admin_add.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Posts/admin_edit.ctp",
+		"/E/Documents/GitHub/easycms/app/View/MiscPosts/admin_edit.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Links/admin_edit.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Links/admin_add.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Groups/admin_add.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Groups/admin_edit.ctp",
+		"/E/Documents/GitHub/easycms/app/View/BuildingRooms/admin_add.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Configs/admin_add.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Configs/admin_edit.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Downloads/admin_edit.ctp",
+		"/E/Documents/GitHub/easycms/app/View/BuildingRooms/admin_edit.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Buildings/admin_add.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Buildings/admin_edit.ctp",
+		"/E/Documents/GitHub/easycms/app/View/BuildingBlocks/admin_add.ctp",
+		"/E/Documents/GitHub/easycms/app/webroot/js/app.default.js",
+		"/E/Documents/GitHub/easycms/app/webroot/js/app.admin.js",
+		"/E/Documents/GitHub/easycms/app/View/Buildings/admin_index.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Layouts/ajax.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Layouts/flash.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Layouts/mobile.ctp",
+		"/E/Documents/GitHub/easycms/app/Config/Schema/ethnic_group.php",
+		"/E/Documents/GitHub/easycms/app/View/Links/admin_recycle_bin.ctp",
+		"/E/Documents/GitHub/easycms/app/View/Posts/admin_recycle_bin.ctp",
+		"/D/xampp/mysql/data/mysql_error.log",
+		"/E/Documents/GitHub/easycms/app/Controller/ExercisesController.php",
+		"/E/Documents/GitHub/easycms/app/Controller/TutorialsController.php",
+		"/E/Documents/GitHub/easycms/app/Controller/ChaptersController.php"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"333333",
+			"#EEEEEE",
+			"viewVars",
+			"category",
+			"../img/",
+			"Telex",
+			"font-fa",
+			"fond-family",
+			"</h3>",
+			"<h3>",
+			"url",
+			"simpleCategory",
+			"showParent",
+			"3",
+			"margin",
+			"i",
+			"$buildingResident['BuildingResident']",
+			"$category[$inflector['camelize']]",
+			"data",
+			"named",
+			"$this->",
+			"building_block_id",
+			" ',",
+			"\"",
+			"$",
+			"^",
+			"．",
+			"Form",
+			"SessionKey",
+			" * ",
+			"&$Model",
+			"&$",
+			"cleanHtml",
+			"&$",
+			"error_Report",
+			"E:\\",
+			"\\xampp\\",
+			"Debugger",
+			"$_method",
+			"$method",
+			"pkg",
+			"getMenuId",
+			"_method",
+			":+",
+			"CakePHP",
+			"font",
+			", &$data",
+			"id=\"news\"",
+			"section",
+			"footer",
+			"header",
+			"div",
+			"cakeDescription",
+			"user",
+			"6",
+			"onScrollMove",
+			"onScrollEnd",
+			"_resetPos",
+			"onScrollEnd",
+			"panelScroller",
+			"tab",
+			"<li class=\"tab\"></li>",
+			"\n		",
+			"\n",
+			"\n		",
+			"		<li class=\"tab\"></li>\n",
+			"\n		",
+			"tab",
+			"iScroll",
+			"scroll",
+			"onScrollEnd",
+			"$",
+			"panelInner",
+			"\"",
+			"\"C:\\Users\\shijun\\AppData\\Roaming\\Sublime Text 2\\Packages\\",
+			"copyrightprovider",
+			"panel",
+			"from",
+			"45px",
+			"mainScroller",
+			"scroller",
+			":  ",
+			":",
+			"panels",
+			"panelS",
+			"panels",
+			"display",
+			"padding",
+			"width: 100%",
+			"u",
+			"topOffset",
+			"$searchClass",
+			"private function get",
+			"_g",
+			"=  =",
+			",'",
+			"=",
+			" += +",
+			"actionG",
+			"logHeader",
+			"printResult",
+			"///",
+			"  =  ",
+			"= >",
+			"< =",
+			"=",
+			"=([a-z])",
+			"=([a-z\\$])",
+			"=([a-z]\\$)",
+			"=([a-z])",
+			"=([\\$a-z])",
+			"=([$a-z])",
+			",$",
+			"try{",
+			"if("
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"../../img/",
+			"Microsoft Yahei",
+			"$enums['",
+			"',",
+			"'",
+			"\",",
+			"\",\\n",
+			"\"",
+			"\" => \"",
+			"",
+			"D:\\",
+			"E:\\xampp\\",
+			"",
+			"$this->service",
+			"protected function _get",
+			"G",
+			"==",
+			", '",
+			" = ",
+			"=",
+			"_g",
+			"// ",
+			" = ",
+			"=> ",
+			" <=",
+			" = ",
+			" = $1",
+			" = $0",
+			" = $1$2",
+			" = $1",
+			" = \\1",
+			" = \\0",
+			" = \\1",
+			", $",
+			"try {",
+			"if ("
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 38.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.git":
+	{
+		"height": 144.0
+	},
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"default",
+				"app/View/Layouts/default.ctp"
+			],
+			[
+				"core.php",
+				"app/Config/core.php"
+			],
+			[
+				"admin_index.ctp",
+				"app/View/Users/admin_index.ctp"
+			],
+			[
+				"images",
+				"protected/lib/services/ImageService.php"
+			],
+			[
+				"sear",
+				"protected/modules/default/controllers/SearchController.php"
+			],
+			[
+				"indexc",
+				"protected/modules/default/controllers/IndexController.php"
+			],
+			[
+				"searchcon",
+				"protected/modules/default/controllers/SearchController.php"
+			],
+			[
+				"hammerjs",
+				"/D/xampp/htdocs/iscroll/examples/hammerjs/index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/E/Documents/GitHub/plugins/cakephp-plugins.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 234.0,
+	"status_bar_visible": true
+}

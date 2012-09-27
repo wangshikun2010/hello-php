@@ -1,0 +1,43 @@
+<?php
+//php中的数据处理--进制转换
+
+$bin = "11001";
+$dec = 100;
+$hex = "12F";
+$oct = "77";
+echo "二进制".$bin."对应的十进制数为：";
+echo bindec($bin);
+echo "<p>";
+echo "十进制".$dec."对应的二进制数为：";
+echo decbin($dec);
+echo "<p>";
+echo "十进制".$dec."对应的八进制数为：";
+echo decoct($dec);
+echo "<p>";
+echo "十进制".$dec."对应的十六进制数为：";
+echo dechex($dec);
+echo "<p>";
+echo "八进制".$oct."对应的十进制数为：";
+echo octdec($oct);
+echo "<p>";
+echo "十六进制".$hex."对应的十进制数为：";
+echo hexdec($hex);
+echo "<p>";
+echo "二进制".$bin."对应的八进制数为：";
+echo decoct(bindec($bin));
+echo "<p>";
+echo "二进制".$bin."对应的十六进制数为：";
+echo dechex(bindec($bin));
+echo "<p>";
+echo "八进制".$oct."对应的二进制数为：";
+echo decbin(octdec($oct));
+echo "<p>";
+echo "八进制".$oct."对应的十六进制数为：";
+echo dechex(octdec($oct));
+echo "<p>";
+echo "十六进制".$hex."对应的二进制数为：";
+echo decbin(hexdec($hex));
+echo "<p>";
+echo "十六进制".$hex."对应的二八进制数为：";
+echo decoct(hexdec($hex));
+echo "<p>";

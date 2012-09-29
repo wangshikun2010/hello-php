@@ -1,5 +1,5 @@
 <?php
-//php中的数据函数--字符串函数--转化字符串中的特殊符号位HTML标记
+//php中的数据处理--字符串函数--转化字符串中的特殊符号位HTML标记
 
 $s = "<font color=\"#FF0000\">I love beijing toktianan!</font>";
 $t = htmlspecialchars($s);

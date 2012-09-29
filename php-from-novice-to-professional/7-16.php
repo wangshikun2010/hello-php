@@ -1,5 +1,5 @@
 <?php
-//php中数据函数--字符串函数--去除字符串中的特殊符号
+//php中数据处理--字符串函数--去除字符串中的特殊符号
 
 $s = "<font color=\"#FF0000\">I love beijing toktianan!</font>";
 $t = strip_tags($s);

@@ -1,43 +1,50 @@
 <?php
 //php中数据处理--数组函数--合并数组
 
+require_once "functions.php";
+
+
 //array_merge()
 $a = array(1,2,3,4,5);
 $b = array(6,7,8,9,10);
 echo "array \$a: ";
-print_r($a);
+debug($a);
 echo "<p>";
 echo "array \$b: ";
-print_r($b);
+debug($b);
 echo "<p>";
 echo "After the merger, the array: ";
-print_r(array_merge($a,$b));
+debug(array_merge($a,$b));
 echo "<p>";
 
 $c = array("a" => "a", "b" => "b", "c" => "c");
 $d = array("a" => "d", "b" => "e", "c" => "f");
 echo "array \$c: ";
-print_r($c);
+debug($c);
 echo "<p>";
 echo "array \$d: ";
-print_r($d);
+debug($d);
 echo "<p>";
 echo "After the merger, the array: ";
-print_r(array_merge($c,$d));
+debug(array_merge($c,$d));
 echo "<p>";
 
 $string1 = array(
-		0 => array(1,2,3),
-		1 => array(4,5,6),
-		2 => array(7,8,9)
+		"one" => array(1,2,3,5),
+		array(4,5,6),
+		array(7,8,9)
 );
 $string2 = array(
-		0 => array("one","two","three"),
-		1 => array("four","five","six"),
-		2 => array("seven","eight","nine")
+		"one" => array(1,2,3,4),
+		array("one","two","three"),
+		array("four","five","six"),
+		array("seven","eight","nine")
 );
-print_r($string1);
+debug($string1);
 echo "<p>";
-print_r($string2);
+debug($string2);
 echo "<p>";
-//print_r(array_merge($string,$string2));
+debug(array_merge_recursive($string1,$string2));
+
+
+debug(array_unique(array_merge(array(1,2,3,5), array(1,2,3,4))));

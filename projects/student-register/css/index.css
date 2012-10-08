@@ -1,0 +1,12 @@
+/*创建表单的css*/
+
+/*body部分样式*/
+body {
+	background: #ccc url(/background1.jpg) no-repeat;
+}
+
+#main {
+	width: 960px;
+	background: #ffffff;
+}
+/*表单样式*/

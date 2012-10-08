@@ -2,7 +2,7 @@
 /*
 获取文件的大小
 */
-$filename = "./functions.php";
+$filename = "data.php";
 echo $filename.": ".filesize($filename)."Bytes";
 echo "<br/>";
 echo filetype($filename);

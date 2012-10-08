@@ -2,7 +2,7 @@
 /*
 打开文件--用只读方式
 */
-$filename = 'functions.php';
+$filename = 'data.php';
 $myfile = fopen($filename,'r');
 fwrite($myfile,'hello world');
 fclose($myfile);

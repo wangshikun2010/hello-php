@@ -2,11 +2,28 @@
 
 /*body部分样式*/
 body {
-	background: #ccc url(/background1.jpg) no-repeat;
+	background: #FFFFFF url(/background1.jpg) no-repeat;
+	text-align: left;
 }
 
 #main {
 	width: 960px;
-	background: #ffffff;
+	background: #CCCCCC;
+	margin: auto;
+	border: 1px solid #000000;
 }
 /*表单样式*/
+
+#main form legend {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#main form #name {
+	border-radius: 5px;
+	border-width: 3px;
+}
+
+input:focus {
+	outline: none;
+}

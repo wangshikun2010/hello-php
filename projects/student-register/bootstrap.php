@@ -160,9 +160,9 @@
 				</div>
 
 				<div class="control-group">
-					<label class="control-label" for="Political_landscape">政治面貌</label>
+					<label class="control-label" for="political_landscape">政治面貌</label>
 					<div class="controls">
-						<select name="Political_landscape" id="Political_landscape">
+						<select name="political_landscape" id="political_landscape">
 							<option value="1">中共党员</option>
 							<option value="2">中共预备党员</option>
 							<option value="3">共青团员</option>

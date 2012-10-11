@@ -8,7 +8,7 @@ $list = array (
     '"aaa","bbb"'
 );
 
-$fp = fopen('./tmp/data.csv', 'a');
+$fp = fopen('./tmp/data1.csv', 'a');
 
 foreach ($list as $line) {
     echo fputcsv($fp, explode(',', $line))."<br/>";

@@ -8,13 +8,23 @@ define('DATA_FILE', __DIR__ . DS . 'data.csv');
  * @param  array $student 1条学生信息
  * @return bool       是否写入成功
  */
-function write_data($student) {
+function write_data($newstudent) {
 	// 1. 先读取DATA_FILE中的所有学生信息
 	$students = read_data();
 
-	// 2. 将用户提交的$student合并到$students
-	foreach ($students as $key => $student) {
-		if()array_push($students, $student)
+	// 2. 将用户提交的$student合并到$students,$student是一个学生信息,$students是所有学生信息
+
+	$not_find = false;
+	foreach ($students as $key => &$student) {
+
+		if ($student['student_id'] === $newstudent['student_id']) {
+			$not_find = true;
+			$student = array_merge($student,$newstudent);
+			break;
+		}
+	}
+	if($not_find === false) {
+		array_push($students,$newstudent);
 	}
 
 	// 3. 将合并后的信息重新写入文件

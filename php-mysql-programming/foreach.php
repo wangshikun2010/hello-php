@@ -39,6 +39,7 @@ foreach ($a as $k => $v) {
     echo "\$a[$k] => $v<br/>";
 }
 
+//多维数组
 $b = array(
 		"one" => array(
 			"one" => "1",

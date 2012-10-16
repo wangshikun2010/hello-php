@@ -13,17 +13,16 @@ function write_data($newstudent) {
 	$students = read_data();
 
 	// 2. 将用户提交的$student合并到$students,$student是一个学生信息,$students是所有学生信息
-
-	$not_find = false;
-	foreach ($students as $key => &$student) {
-
+	$find = false;
+	foreach ($students as $key => $student) {
 		if ($student['student_id'] === $newstudent['student_id']) {
-			$not_find = true;
-			$student = array_merge($student,$newstudent);
+			$find = true;
+			$students[$key] = array_merge($student,$newstudent);
 			break;
 		}
 	}
-	if($not_find === false) {
+
+	if($find === false) {
 		array_push($students,$newstudent);
 	}
 
@@ -34,7 +33,7 @@ function write_data($newstudent) {
 	}
 	fclose($handle);
 
-	return $students;
+	return read_data();
 }
 
 /**

@@ -1,7 +1,7 @@
 <?php
 
 define('DS', DIRECTORY_SEPARATOR);
-define('DATA_FILE', __DIR__ . DS . 'article_data.csv');
+define('DATA_FILE', __DIR__ . DS . 'data.csv');
 
 /**
  * @param  array $link 1条链接信息
@@ -32,13 +32,14 @@ function read_data() {
 		'time',
 		'title',
 		'link',
-		'index'
+		'index',
+		'classification'
 	);
 
 	$links = array();
 
 	if (!file_exists(DATA_FILE)) {
-		return null;
+		return $links;
 	}
 
 	$handle = fopen(DATA_FILE, 'r');

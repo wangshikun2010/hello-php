@@ -61,3 +61,10 @@ function debug($data) {
 	print_r($data);
 	echo "</pre>";
 }
+
+//获取当前本地时间
+date_default_timezone_set('PRC');
+$today = date("Y-n-j G:i:s");
+
+function Classification($class) {
+}

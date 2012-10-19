@@ -29,6 +29,7 @@ $links = read_data();
 				<div class="nav-collapse collapse">
 					<ul class="nav">
 						<li><a href="index.php">已经添加链接</a></li>
+						<p class="pull-right"><a href="add.php" class="btn btn-primary">添加</a></p>
 					</ul>
 				</div>
 			</div>
@@ -46,13 +47,9 @@ $links = read_data();
 			<div class="tab-pane active" id="HTML">
 				<div>
 					<span>最新添加链接</span>
-					<?php foreach ($links as $key => $link): ?>
 					<ul>
-						<?php foreach ($link as $key => $value): ?>
-							<li><a href="<?php echo $key ?>"><?php echo $value ?></a></li>
-						<?php endforeach ?>
+						<li><a href="<?php  ?>"><?php  ?></a></li>
 					</ul>
-					<?php endforeach ?>
 				</div>
 			</div>
 			<div class="tab-pane" id="CSS"></div>
@@ -61,6 +58,6 @@ $links = read_data();
 		</div>
 	</div>
 
-<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/jquery-latest.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>

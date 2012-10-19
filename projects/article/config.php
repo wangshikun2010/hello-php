@@ -16,4 +16,3 @@ $classification = array(
 	'php' => 'PHP',
 	'c' => 'C'
 );
-

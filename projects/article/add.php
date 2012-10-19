@@ -1,4 +1,7 @@
-<?php require 'config.php' ?>
+<?php
+	require 'config.php';
+	require 'functions.php';
+?>
 
 <!DOCTYPE html>
 <html>
@@ -38,7 +41,10 @@
 				<div class="control-group">
 					<label class="control-label" for="time">添加时间</label>
 					<div class="controls">
-						<input type="text" id="time" name="time" placeholder="如:2012-10-17" class="border" required/>
+						<!--<input type="text" id="time" name="time" placeholder="如:2012-10-17" class="border" required/>-->
+						<select name="time" id="time">
+							<option value="<?php echo $today; ?>"><?php echo $today; ?></option>
+						</select>
 					</div>
 				</div>
 
@@ -86,6 +92,6 @@
 	</form>
 </div>
 
-<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/jquery-latest.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>

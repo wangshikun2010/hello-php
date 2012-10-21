@@ -47,9 +47,13 @@ $links = read_data();
 			<div class="tab-pane active" id="HTML">
 				<div>
 					<span>最新添加链接</span>
+					<?php foreach ($links as $key => $link): ?>
 					<ul>
-						<li><a href="<?php  ?>"><?php  ?></a></li>
+						<?php foreach ($link as $key => $value): ?>
+							<li><a href="<?php echo $value ?>"><?php echo $value ?></a></li>
+						<?php endforeach ?>
 					</ul>
+					<?php endforeach ?>
 				</div>
 			</div>
 			<div class="tab-pane" id="CSS"></div>

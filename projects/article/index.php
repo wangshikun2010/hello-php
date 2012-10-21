@@ -1,21 +1,24 @@
 <?php
 require "functions.php";
 require 'config.php';
+require 'number.php';
+
+//读出所有的文件
 $links = read_data();
 
+//th标题
 $link_index = array(
+	'number' => '编号',
 	'time' => '时间',
 	'title' => '标题',
 	'link' => '链接地址',
 	'index' => '难度指数',
 	'classification' => '所属分类'
 );
-$link_count = count($links);
-//如果多为数组的中最后一个元素存在,那么它的样式显示高亮
-if ($links[$link_count-1]) {
-	$latest_link = $links[$link_count-1];
-}
 
+/*如果多维数组的中最后一个元素存在,那么它的样式显示高亮
+$first_link = $links[0];
+class="<?php echo $first_link == $first_link ? 'success' : ''; ?>"*/
 ?>
 
 <!DOCTYPE html>
@@ -47,20 +50,28 @@ if ($links[$link_count-1]) {
 	</div>
 
 	<div class="container">
+		<p>截止目前已经添加了<?php echo link_line()+1; ?>条链接</p>
 		<?php if (!empty($links)): ?>
-			<table class="table table-bordered table-stripped">
-				<tr>
-					<?php foreach($link_index as $key=>$value): ?>
-						<th><?php echo $value; ?></th>
+			<table class="table table-striped table-bordered table-condensed">
+				<thead>
+					<tr>
+						<?php foreach($link_index as $key=>$value): ?>
+							<th><?php echo $value; ?></th>
+						<?php endforeach; ?>
+					</tr>
+				</thead>
+				<tbody>
+					<?php foreach ($links as $link): ?>
+					<tr>
+						<td><?php foo(); ?></td>
+						<?php foreach ($link as $key=>$value): ?>
+							<td><?php echo $value; ?></td>
+						<?php endforeach; ?>
+						<td><a class="btn btn-small" href="#">编辑</a></td>
+						<td><a class="btn btn-small btn-primary" href="delete.php">删除</a></td>
+					</tr>
 					<?php endforeach; ?>
-				</tr>
-				<?php foreach ($links as $link): ?>
-				<tr class="<?php $latest_link == $latest_link ? 'success' : ''; ?>">
-					<?php foreach ($link as $key=>$value): ?>
-						<td><?php echo $value; ?></td>
-					<?php endforeach; ?>
-				</tr>
-				<?php endforeach; ?>
+				</tbody>
 			</table>
 		<?php else: ?>
 			<p class="alert alert-info">

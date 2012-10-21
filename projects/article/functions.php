@@ -12,7 +12,18 @@ function write_data($newlink) {
 	$links = read_data();
 
 	// 2. 将用户提交的$link合并到$links,$link是一个链接信息,$links是所有学生信息
-	array_push($links,$newlink);
+	$find = false;
+	foreach ($links as $key => $link) {
+		if ($link['link'] === $newlink['link']) {
+			$find = true;
+			$links[$key] = array_merge($link,$newlink);
+			break;
+		}
+	}
+
+	if($find === false) {
+		array_push($links,$newlink);
+	}
 
 	// 3. 将合并后的信息重新写入文件
 	$handle = fopen(DATA_FILE, 'w+');
@@ -48,6 +59,8 @@ function read_data() {
 	}
 	fclose($handle);
 
+	$links = array_reverse($links);
+
 	return $links;
 }
 
@@ -66,5 +79,14 @@ function debug($data) {
 date_default_timezone_set('PRC');
 $today = date("Y-n-j G:i:s");
 
-function Classification($class) {
+//计算当前文件的函数
+
+function link_line() {
+	$links = read_data();
+
+	foreach ($links as $key => $link) {
+		$line = $key;
+	}
+
+	return $line;
 }

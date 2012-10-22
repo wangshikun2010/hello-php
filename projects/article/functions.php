@@ -13,6 +13,7 @@ function write_data($newlink) {
 
 	// 2. 将用户提交的$link合并到$links,$link是一个链接信息,$links是所有学生信息
 	$find = false;
+
 	foreach ($links as $key => $link) {
 		if ($link['link'] === $newlink['link']) {
 			$find = true;
@@ -21,8 +22,15 @@ function write_data($newlink) {
 		}
 	}
 
+	//如果是新的链接
 	if($find === false) {
+		if(empty($links)) {
+			$newlink['id'] = 1;
+		} else {
+			$newlink['id'] = $links[0]['id']+1;
+		}
 		array_push($links,$newlink);
+
 	}
 
 	// 3. 将合并后的信息重新写入文件
@@ -44,7 +52,8 @@ function read_data() {
 		'title',
 		'link',
 		'index',
-		'classification'
+		'classification',
+		'id'
 	);
 
 	$links = array();
@@ -73,20 +82,4 @@ function debug($data) {
 	echo "<pre>";
 	print_r($data);
 	echo "</pre>";
-}
-
-//获取当前本地时间
-date_default_timezone_set('PRC');
-$today = date("Y-n-j G:i:s");
-
-//计算当前文件的函数
-
-function link_line() {
-	$links = read_data();
-
-	foreach ($links as $key => $link) {
-		$line = $key;
-	}
-
-	return $line;
 }

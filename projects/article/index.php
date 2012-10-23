@@ -1,59 +1,53 @@
 <?php
 require "functions.php";
-require 'config.php';
 
 //读出所有的文件
-$links = read_data();
+$links = read_link();
+$categories = read_category_map();
 
-//th标题
-$link_index = array(
-	'time' => '时间',
-	'title' => '标题',
-	'link' => '链接地址',
-	'index' => '难度指数',
-	'classification' => '所属分类',
-	'id' => '编号',
-	'file' => '文件操作'
-);
+//判断有没有传category_id这个参数
+if (isset($_GET['category_id'])) {
+	$category_id = intval($_GET['category_id']);
+	$category_links = array();
+	//遍历数组找到与category_id相同的,看要找的数组是否存在,找到了放在新的数组,并覆盖当前数组
+	foreach ($links as $key => $link) {
+		if ($link['category_id'] == $category_id) {
+			$category_links[] = $link;
+		}
+	}
+	$links = $category_links;
+}
 
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title><?php echo $application_name; ?></title>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/reset.css" rel="stylesheet">
-</head>
-<body>
-
-<?php
-	 require 'header.php';
-?>
+<?php require 'header.php'; ?>
 
 <div class="container">
-	<!--<p>截止目前已经添加了条链接</p>-->
 	<?php if (!empty($links)): ?>
+		<p>截止目前已经添加了<?php echo $links[0]['id']; ?>条链接</p>
 		<table class="table table-striped table-bordered table-condensed">
 			<thead>
 				<tr>
-					<?php foreach($link_index as $key=>$value): ?>
-						<th><?php echo $value; ?></th>
-					<?php endforeach; ?>
+					<th>分类</th>
+					<th>标题</th>
+					<th>难度</th>
+					<th>时间</th>
+					<th>管理</th>
 				</tr>
 			</thead>
 			<tbody>
 				<?php foreach ($links as $link): ?>
 				<tr>
-					<?php foreach ($link as $key=>$value): ?>
-						<td><?php echo $value; ?></td>
-					<?php endforeach; ?>
-					<td><a class="btn btn-small" href="#">编辑</a></td>
-					<td><a class="btn btn-small btn-primary" href="delete.php?id=<?php echo $link['id']?>">删除</a></td>
+					<!--取到相对应的link键对值的键对值-->
+					<!--进行分类-->
+					<td><a href="<?php echo $_SERVER['PHP_SELF']; ?>?category_id=<?php echo $link['category_id']; ?>"><?php echo $categories[$link['category_id']]; ?></a></td>
+					<td><a href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>" target="_blank"><?php echo $link['title']; ?></a></td>
+					<td><?php echo $difficulty[$link['difficulty']]; ?></td>
+					<td><?php echo $link['time']; ?></td>
+					<td>
+						<a class="btn btn-small" href="edit_link.php?id=<?php echo $link['id']?>">编辑</a>
+						<a class="btn btn-small btn-primary" href="delete_link.php?id=<?php echo $link['id']?>">删除</a>
+					</td>
 				</tr>
 				<?php endforeach; ?>
 			</tbody>
@@ -63,7 +57,8 @@ $link_index = array(
 			尚没有添加链接!
 		</p>
 	<?php endif; ?>
+
+	<?php debug($links); ?>
 </div>
 
-</body>
-</html>
+<?php require 'footer.php'; ?>

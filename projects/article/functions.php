@@ -1,12 +1,13 @@
 <?php
 require 'config.php';
 
+//定义两个csv文件,用于存储链接和分类的数据
 define('DS', DIRECTORY_SEPARATOR);
 define('LINK_DATA_FILE', __DIR__ . DS . 'links.csv');
 define('CATEGORY_DATA_FILE', __DIR__ . DS . 'categories.csv');
 
 /**
- * @param  array $link 1条链接信息
+ * @param  array $newlink 1条链接信息
  * @return bool       是否写入成功
  */
 function write_link($newlink) {
@@ -14,12 +15,13 @@ function write_link($newlink) {
 	$links = array_reverse(read_link());
 	// debug($links);
 
-	// 2. 将用户提交的$link合并到$links,$link是一个链接信息,$links是所有链接
+	// 2. 将用户提交的$newlink合并到$links,$newlink是一条新添加的链接信息,$links是所有链接
 	$find = false;
 
 	foreach ($links as $key => $link) {
 		if (
 			// 编辑操作, 提交数据中有id字段
+			// 新添加的链接编号
 			(isset($newlink['id']) && $link['id'] == $newlink['id'])
 			// 添加操作, 如果url重复, 则覆盖
 			|| ($link['url'] === $newlink['url'])
@@ -38,6 +40,7 @@ function write_link($newlink) {
 		} else {
 			$newlink['id'] = $links[count($links)-1]['id']+1;
 		}
+		$links = array_reverse($links);
 		array_push($links,$newlink);
 
 	}
@@ -92,7 +95,7 @@ function read_link($id = null) {
 	return $links;
 }
 
-//删除指定id的文件
+//删除指定id的链接
 function delete_link($id = null, $category_id = null) {
 	$links = read_link();
 
@@ -154,6 +157,7 @@ function read_category($id = null) {
 
 	return $categories;
 }
+
 /**
  * @param  array $new_category 写入新的类
  * @return array               写入类的数组
@@ -198,6 +202,7 @@ function write_category($new_category) {
 
 	return $categories;
 }
+
 /**
  * @param  array $id 要删除的分类的编号
  * @return array     没有删除的分类

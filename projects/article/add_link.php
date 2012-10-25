@@ -1,5 +1,6 @@
 <?php
 	//添加链接的页面
+
 	require 'functions.php';
 
 	// 如果已经提交表单, 保存1条数据, 然后跳转到列表页
@@ -8,7 +9,8 @@
 		header('Location: index.php');
 		exit();
 	}
-	// 否则显示表单
+
+	//分类数据会根据添加分类变化
 	$categories = read_category_map();
 
 ?>
@@ -16,6 +18,7 @@
 <?php require 'header.php'; ?>
 
 <div class="container">
+	<p class="text-error"><b>你当前处于添加链接页面,请添加链接!</b></p>
 	<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="form-verticle">
 		<div class="tab-content">
 			<fieldset>

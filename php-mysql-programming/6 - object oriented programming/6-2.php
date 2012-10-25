@@ -7,10 +7,6 @@ class simpleClass {
 
 	//方法声明
 	public function displayVar() {
-		echo $this->var;
+		echo $this->var, PHP_EOL;
 	}
 }
-
-//将类赋值给一个对象
-$class = new simpleClass();
-echo $class->displayVar();

@@ -1,4 +1,6 @@
 <?php
+	//编辑链接
+
 	require 'functions.php';
 
 	// 如果已经提交表单, 保存1条数据, 然后跳转到列表页
@@ -16,6 +18,7 @@
 <?php require 'header.php'; ?>
 
 <div class="container">
+	<p class="text-error"><b>编辑链接</b></p>
 	<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="form-verticle">
 		<div class="tab-content">
 			<fieldset>

@@ -14,7 +14,7 @@ function debug($data, $label) {
 
 var_dump(is_null(null));
 
-require 'not-exists.php';
+// require 'not-exists.php';
 
 ?>
 <html>
@@ -22,7 +22,7 @@ require 'not-exists.php';
 	<title>Super Globals in PHP</title>
 </head>
 <body>
-	<form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post" enctype="multipart/form-data">
+	<form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="get" enctype="multipart/form-data">
 		<label>
 			Username:
 			<input type="text" name="username" required autofocus>

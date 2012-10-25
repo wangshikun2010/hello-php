@@ -46,7 +46,6 @@ if (isset($_GET['category_id'])) {
 
 					<!--进行分类-->
 					<td><a href="<?php echo $_SERVER['PHP_SELF']; ?>?category_id=<?php echo $link['category_id']; ?>"><?php echo $categories[$link['category_id']]; ?></a></td>
-
 					<td><a href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>" target="_blank"><?php echo $link['title']; ?></a></td>
 					<td><?php echo $difficulty[$link['difficulty']]; ?></td>
 					<td><?php echo $link['time']; ?></td>

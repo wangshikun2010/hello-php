@@ -166,14 +166,15 @@ function write_category($new_category) {
 	// 1. 先读取LINK_DATA_FILE中的所有链接分类信息
 	$categories = array_reverse(read_category());
 	//debug($categories);
+	// exit();
 
 	// 2. 将用户提交的$new_category合并到$categories,$category是一个分类信息,$categories是所有分类
 	$find = false;
 
 	foreach ($categories as $key => $category) {
 		if (
-			// 编辑操作, 提交数据中有id字段
-			(isset($new_category['id']) && $categories['id'] == $new_category['id'])
+			// 编辑操作, 提交数据中有id字段,看已提交的分类和已有的分类的编号是不是一样
+			(isset($new_category['id']) && $category['id'] == $new_category['id'])
 			// 添加操作, 如果url重复, 则覆盖
 			|| ($category['name'] === $new_category['name'])
 		) {

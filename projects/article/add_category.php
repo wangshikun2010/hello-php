@@ -16,26 +16,23 @@
 <?php require 'header.php'; ?>
 
 <div class="container">
-	<p class="text-error"><b>你当前处于添加分类接页面,请添加分类!</b></p>
 	<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="form-verticle">
-		<div class="tab-content">
-			<fieldset>
-				<div class="control-group">
-					<label class="control-label" for="time">时间</label>
-					<div class="controls">
-						<input type="text" name="time" id="time" value="<?php echo $today; ?>">
-					</div>
+		<fieldset>
+			<legend>添加分类</legend>
+			<div class="control-group">
+				<label class="control-label" for="time">时间</label>
+				<div class="controls">
+					<input type="text" name="time" id="time" value="<?php echo $today; ?>">
 				</div>
+			</div>
 
-				<div class="control-group">
-					<label class="control-label" for="name">标题</label>
-					<div class="controls">
-						<input type="text" id="name" name="name" placeholder="请填写文章的名称" required/>
-					</div>
+			<div class="control-group">
+				<label class="control-label" for="name">标题</label>
+				<div class="controls">
+					<input type="text" id="name" name="name" placeholder="请填写文章的名称" required/>
 				</div>
-
-			</fieldset>
-		</div>
+			</div>
+		</fieldset>
 		<div class="form-actions">
 			<input type="submit" class="btn btn-primary btn-large" value="提交"/>
 			<input type="reset" class="btn btn-danger btn-large" value="重新填写"/>

@@ -1,6 +1,4 @@
-<?php
-	require 'config.php';
-?>
+<?php require 'config.php' ?>
 
 <!DOCTYPE html>
 <html>
@@ -26,11 +24,8 @@
 			<a class="brand" href="#"><?php echo $application_name; ?></a>
 			<div class="nav-collapse collapse">
 				<ul class="nav">
-					<a class="btn btn-small btn-primary" href="index.php">链接管理</a>
-					<a class="btn btn-small btn-primary" href="category.php">分类管理</a>
-					<a class="btn btn-small btn-info" href="add_link.php">添加链接</a>
-					<a class="btn btn-small btn-info" href="add_category.php">添加分类</a>
-					<a class="btn btn-small"href="display.php">选项卡模式</a>
+					<a class="btn btn-small" href="display.php">已登记学生列表</a>
+					<a class="btn btn-small" href="index.php">添加学生信息</a>
 				</ul>
 			</div>
 		</div>

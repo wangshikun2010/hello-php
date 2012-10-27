@@ -33,7 +33,7 @@ function write_data($newstudent) {
 	}
 	fclose($handle);
 
-	return read_data();
+	return $students;
 }
 
 /**

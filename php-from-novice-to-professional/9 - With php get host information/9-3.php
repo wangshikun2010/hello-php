@@ -1,6 +1,6 @@
 <?php
 /*
-checkdate()检查日期的合法性
+checkdate(月,日,年)检查日期的合法性
 */
 
 if(checkdate(12,30,2005)) {

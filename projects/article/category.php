@@ -28,7 +28,7 @@ $categories = read_category();
 					<td><?php echo $category['time']; ?></td>
 					<td>
 						<a class="btn btn-small" href="edit_category.php?id=<?php echo $category['id']?>" title="点击编辑分类">编辑</a>
-						<a class="btn btn-small btn-primary" href="delete_category.php?id=<?php echo $category['id']?>" title="点击删除分类">删除</a>
+						<a class="btn btn-small btn-primary" href="delete_category.php?id=<?php echo $category['id']?>" title="点击删除分类" onclick="window.confirm('你确定要删除吗?');">删除</a>
 					</td>
 				</tr>
 				<?php endforeach; ?>

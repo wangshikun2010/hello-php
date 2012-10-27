@@ -1,37 +1,21 @@
-<?php require "config.php"; ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title><?php echo $application_name; ?></title>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/reset.css" rel="stylesheet">
-</head>
-<body>
+<?php
 
-<div class="navbar">
-	<div class="navbar-inner">
-		<div class="container">
-			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</a>
-			<a class="brand" href="#"><?php echo $application_name; ?></a>
-			<div class="nav-collapse collapse">
-				<ul class="nav">
-					<li><a href="display.php">已登记学生列表</a></li>
-				</ul>
-			</div><!--/.nav-collapse -->
-		</div>
-	</div>
-</div>
+	require "config.php";
+	require "functions.php";
+
+	// 如果已经提交表单, 保存1条数据, 然后跳转到列表页
+	if (!empty($_POST) && !empty($_POST['student_id'])) {
+		write_data($_POST);
+		header('Location: display.php?student_id=' . $_POST['student_id']);
+		exit();
+	}
+
+?>
+
+<?php require 'header.php'; ?>
 
 <div class="container">
-	<form action="submit.php" method="post" class="form-verticle">
+	<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="form-verticle">
 
 		<!-- tabs -->
 		<ul class="nav nav-tabs">
@@ -216,8 +200,4 @@
 	</form>
 </div>
 
-<script src="js/jquery-latest.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-</body>
-</html>
+<?php require 'footer.php'; ?>

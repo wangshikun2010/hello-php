@@ -5,8 +5,9 @@ class Visitor {
 	public function greetVisitor() {
 		echo "Hello<br/>";
 	}
+
 	function sayGoodbye() {
-		echo "Goodbye";
+		echo "Goodbye<br/>";
 	}
 }
 
@@ -18,7 +19,7 @@ $Visitor->sayGoodbye();
 //protected
 class Staff {
 	private $ein;
-	function _construct($ein) {
+	function __construct($ein) {
 		if($this->verify_ein($ein)) {
 			echo 'EIN verified. Finish';
 		}

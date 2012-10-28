@@ -7,9 +7,11 @@ class ExtendClass extends simpleClass {
     //重新定义父类的方法
     function displayVar() {
         echo "Extending class", PHP_EOL;
+        echo '<br/>';
         parent::displayVar();
     }
 }
 
 $extended = new ExtendClass();
+echo '<br/>';
 $extended->displayVar();

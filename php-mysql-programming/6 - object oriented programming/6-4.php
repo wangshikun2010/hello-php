@@ -10,7 +10,7 @@ class staff {
 	var $name;
 	function __set($propName,$propValue) {
 		//echo "Nonexistent variable: \$$propName";
-		$this->$propName = $propValue;
+		$this->{$propName} = $propValue;
 		//echo "<br/>";
 		//echo $this->$propName;
 	}

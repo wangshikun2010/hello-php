@@ -1,7 +1,7 @@
 <?php
 //简单的类的声明
 
-class simpleClass {
+class SimpleClass {
 	//成员声明
 	public $var = "a default value";
 
@@ -10,3 +10,6 @@ class simpleClass {
 		echo $this->var, PHP_EOL;
 	}
 }
+
+$var = new SimpleClass();
+$var->displayVar();

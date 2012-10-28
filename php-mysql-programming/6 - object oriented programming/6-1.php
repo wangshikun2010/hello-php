@@ -17,6 +17,10 @@ class staff {
 	function setName($name) {
 		$this->name = $name;
 	}
+
+	function getName() {
+		return $this->name;
+	}
 }
 
 $employee = new staff();
@@ -27,4 +31,5 @@ $employee->colckIn();
 echo "<br/>";
 $employee->colckOut();
 echo "<br/>";
-// $employee->setName($employee->name);
+$employee->setName($employee->name);
+echo $employee->getName();

@@ -1,5 +1,4 @@
 <?php
-// require 'Link.php';
 
 class LinkCollection {
 	private $filename;
@@ -105,7 +104,7 @@ class LinkCollection {
 	}
 }
 
-// $collection = new LinkCollection('../links.csv');
+//$collection = new LinkCollection('../links.csv');
 // var_dump($collection->read());
 // var_dump($collection->read('1'));
 // var_dump($collection->read(1));

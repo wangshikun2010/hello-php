@@ -82,7 +82,7 @@ class CategoryCollection {
 	}
 
 	//删除一条分类,$id是分类编号,$category_id是链接编号
-	public function delete($id,$category_id = null) {
+	public function delete($id) {
 		//删除一条分类
 		if (isset($this->categories[$id])) {
 			unset($this->categories[$id]);
@@ -91,10 +91,13 @@ class CategoryCollection {
 		}
 
 		//删除一条分类及其下面的链接
-		if(isset($this->categories[$id]) && $category_id == $this->categories[$category->id]) {
-			unset($this->categories[$category->id]);
-			$this->save();
-			return true;
+		$links = new LinkCollection($this->filename);
+		foreach ($links as $key => $link) {
+			if ($link->category_id == $this->categories[$id]) {
+				$links->delete($link->category_id);
+				$this->save();
+				return true;
+			}
 		}
 
 		return false;

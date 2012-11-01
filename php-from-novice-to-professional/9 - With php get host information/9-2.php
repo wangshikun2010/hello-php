@@ -7,12 +7,12 @@
 echo $_SERVER['HTTP_USER_AGENT'];
 echo '<p>';
 
-if(strstr($_SERVER['HTTP_USER_AGENT'],'KHTML')) {
+if(strstr($_SERVER['HTTP_USER_AGENT'],'Chrome')) {
 	echo '浏览器的类型为: ';
-	echo 'Chorme';
+	echo 'Chrome';
 }
 
 echo 'IP地址是: ';
 echo '<p>';
-echo $_SERVER[REMOTE_ADDR];
+echo $_SERVER['REMOTE_ADDR'];
 

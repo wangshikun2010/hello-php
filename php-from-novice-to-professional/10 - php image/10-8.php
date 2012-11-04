@@ -3,7 +3,7 @@
 require 'color.php';
 
 imagefilledrectangle($im,5,5,395,395,$white);
-$m = 20;
+$m = 200;
 $n = sqrt($m*$m+$m*$m-2*$m*$m*cos(3*pi()/5));
 $a = cos(2*pi()/5)*$n;
 $b = sin(2*pi()/5)*$n;

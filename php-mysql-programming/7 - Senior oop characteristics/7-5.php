@@ -26,7 +26,7 @@ class Employee implements Iname {
 	}
 
 	public function setName($name) {
-		if (isset($name) === false) {
+		if (empty($name)) {
 		 	echo '没有输入姓名!';
 		} else {
 			$this->name = $name;
@@ -46,7 +46,7 @@ class Ceo implements Iname, Iage {
 	private $age;
 
 	public function setName($name) {
-		if (isset($name) === false) {
+		if (empty($name)) {
 		 	echo '没有输入姓名!';
 		} else {
 			$this->name = $name;
@@ -58,7 +58,7 @@ class Ceo implements Iname, Iage {
 	}
 
 	public function setAge($age) {
-		if (isset($age) === false) {
+		if (empty($age)) {
 		 	echo '没有输入年龄!';
 		} else {
 			$this->age = $age;

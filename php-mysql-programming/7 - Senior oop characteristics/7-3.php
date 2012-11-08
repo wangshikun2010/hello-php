@@ -13,7 +13,7 @@ class Employee {
 	}
 
 	public function setName($name) {
-		if (isset($name) === false) {
+		if (empty($name)) {
 		 	echo '没有输入姓名!';
 		} else {
 			$this->name = $name;
@@ -44,14 +44,12 @@ class Ceo extends Executive {
 	}
 }
 
-$exec = new Executive();
-$ceo = new Ceo();
+$exec = new Executive('');
+$ceo = new Ceo('Jack');
 
-$exec->setName('张三');
 $exec->getName();
 $exec->pillageCompany();
 
-$ceo->setName('Jack');
 $ceo->getName();
 $ceo->getfacelift();
 

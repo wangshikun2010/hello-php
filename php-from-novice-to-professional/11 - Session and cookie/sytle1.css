@@ -1,0 +1,37 @@
+body td {
+	font: 400 normal 100% Arial, Helvetica,sans-serif;
+}
+
+a {
+	color: #FFD700;
+	text-decoration: none;
+	background: black;
+	width: 80px;
+	padding: 3px;
+}
+
+a:hover {
+	background: maroon;
+}
+
+h1 {
+	background: #228B22;
+	color: #FF6347;
+	font-size: 150%;
+	text-align: right;
+}
+
+h2 {
+	background: #FFDFAD;
+	color: #000000;
+	font-size: 110%;
+}
+
+p {
+	background: #A9A9A9;
+	color: #2F4F4F;
+	font: 400 narmal 120% Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	padding: 2%;
+	border: 1px solid black;
+}

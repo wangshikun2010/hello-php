@@ -42,7 +42,7 @@ $categories = $collection->read();
 		</p>
 	<?php endif; ?>
 
-	<?php debug($categories); ?>
+	<?//php debug($categories); ?>
 </div>
 
 <?php require 'footer.php'; ?>

@@ -1,5 +1,7 @@
 <?php
 
+// require "functions";
+
 class CategoryCollection {
 	private $filename;
 	private $categories = array();
@@ -50,7 +52,6 @@ class CategoryCollection {
 			return $this->categories;
 		}
 
-
 		if (isset($this->categories[$id])) {
 			return $this->categories[$id];
 		}
@@ -86,18 +87,18 @@ class CategoryCollection {
 		//删除一条分类
 		if (isset($this->categories[$id])) {
 			unset($this->categories[$id]);
+
+			//删除分类下面的链接
+			$collection = new LinkCollection(LINK_DATA_FILE);
+			$links = $collection->read();
+			foreach ($links as $key => $link) {
+				if ($link->category_id == $id) {
+					$collection->delete($link->id);
+				}
+			}
+
 			$this->save();
 			return true;
-		}
-
-		//删除一条分类及其下面的链接
-		$links = new LinkCollection($this->filename);
-		foreach ($links as $key => $link) {
-			if ($link->category_id == $this->categories[$id]) {
-				$links->delete($link->category_id);
-				$this->save();
-				return true;
-			}
 		}
 
 		return false;
@@ -124,4 +125,6 @@ class CategoryCollection {
 	}
 }
 
-// $collection = new CategoryCollection('../links.csv');
+// $collection = new CategoryCollection('../categories.csv');
+// var_dump($collection->read());
+// var_dump($collection->delete(2));

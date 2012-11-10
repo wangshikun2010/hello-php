@@ -251,7 +251,7 @@ function read_category_map() {
  * @return void
  */
 function debug($data) {
-	if (DEBUG === false) {
+	if (DEBUG === true) {
 		return;
 	}
 	echo "<pre>";

@@ -1,38 +1,20 @@
 <?php
-class corporation {
-	private $employeeid;
-	private $tiecolor;
 
-	public function setEmployeeID($employeeid) {
-		$this->employeeid = $employeeid;
-	}
+abstract class Super {
 
-	public function getEmployeeID() {
-		return $this->employeeid;
-	}
+	protected $property = null;
 
-	public function setTiecolor($tiecolor) {
-		$this->tiecolor = $tiecolor;
-	}
+	abstract public function abstract_method();
 
-	public function getTiecolor() {
-		return $this->tiecolor;
+	public function public_method() {}
+
+}
+
+class Child extends Super {
+	public function abstract_method() {
+		echo 'Implemented in Child Class', PHP_EOL;
 	}
 }
 
-
-$class = new ReflectionClass('corporation');
-
-$methods = $class->getMethods();
-// var_dump($methods);
-
-foreach ($methods as $method) {
-	echo $method->getName();
-	echo '<p>';
-}
-
-$isAbstract = $class->isAbstract() ? 'yes' : 'no';
-$isFinal = $class->isFinal() ? 'yes' : 'no';
-
-echo 'Is class'.$class->getName().'Abstract: '.$isAbstract;
-echo 'Is class'.$class->getName().'Final: '.$isFinal;
+$instance = new Child();
+$instance->abstract_method();

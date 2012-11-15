@@ -35,10 +35,10 @@ echo '<p>';
 $text = 'http://www.baidu.com';
 echo preg_replace('/http:\/\/(.*)\//', '<a href=\'\${0}\'>\${0}</a>',$text);
 
-// $case1 = array('a', 'b', 'c', 'd', 'e', 'f', 'g');
-// $case2 = array('b', 'e', 'f');
-// $case3 = array('20', '30', '50');
-// echo preg_replace($case2, $case3, $case1);
+$case1 = array('a', 'b', 'c', 'd', 'e', 'f', 'g');
+$case2 = array('/b/', '/e/', '/f/');
+$case3 = array('20', '30', '50');
+var_dump(preg_replace($case2, $case3, $case1));
 
 //preg_replace_callback()
 function acronym($matches) {

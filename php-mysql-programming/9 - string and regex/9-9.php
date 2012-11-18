@@ -12,7 +12,7 @@ echo nl2br($text);
 echo '<p>';
 
 //为什么htmlentities()和htmlspecialchars()没有起作用?
-$string = 'Coffee at c';
+$string = 'Coffee at ě';
 echo $string;
 echo '<p>';
 

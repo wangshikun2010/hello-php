@@ -28,7 +28,7 @@ if (isset($_GET['category_id'])) {
 <div class="container">
 	<?php if (!empty($links)): ?>
 		<p class="text-error"><b>已添加链接</b></p>
-		<p class="text-error">截止目前已经添加了<?php echo $links[0]['id'] ?>条链接</p>
+		<p class="text-error">截止目前已经添加了<?php echo count($links); ?>条链接</p>
 		<table class="table table-striped table-bordered table-condensed">
 			<thead>
 				<tr>
@@ -51,7 +51,7 @@ if (isset($_GET['category_id'])) {
 					<td><?php echo $link['time']; ?></td>
 					<td>
 						<a class="btn btn-small" href="edit_link.php?id=<?php echo $link['id']?>" title="点击编辑链接">编辑</a>
-						<a class="btn btn-small btn-primary" href="delete_link.php?id=<?php echo $link['id']?>" title="点击删除链接" onclick="window.confirm('你确定要删除吗?');">删除</a>
+						<a class="btn btn-small btn-primary" href="delete_link.php?id=<?php echo $link['id']?>" title="点击删除链接" onclick="if (!window.confirm('你确定要删除吗?')) { return false; }">删除</a>
 					</td>
 				</tr>
 				<?php endforeach; ?>

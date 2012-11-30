@@ -34,3 +34,6 @@ $today = date("Y-n-j G:i:s");
 if (defined('DEBUG') === false) {
 	define('DEBUG', true);
 }
+
+@session_start();
+// session_destroy();

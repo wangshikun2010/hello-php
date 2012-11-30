@@ -1,0 +1,51 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/**
+ * 导航栏
+ */
+#navbar {
+	margin: 0px;
+	padding: 0px;
+}
+
+#navbar a:hover, #navbar a:active {
+	color:
+}
+
+#navbar #navbar-inner {
+	border-radius: 1px;
+	background: url(../img/image1.jpg) repeat-x;
+}
+
+/**
+ * 内容样式
+ */
+
+.content {
+	width: 100%;
+}
+
+#span2,#span3,#span4 {
+	border: 1px solid #ccc;
+	display: inline-block;
+	margin: 0px;
+}
+
+#span2 {
+	width: 15%;
+}
+
+#span3 {
+	width: 30%;
+}
+
+#span4 {
+	width: 53%;
+}
+
+
+
+
+

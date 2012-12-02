@@ -1,2 +1,2 @@
 <?php
-$application_name = "evernote笔记页面";
+$application_name = "evernote笔记本";

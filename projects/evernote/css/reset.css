@@ -1,51 +1,223 @@
+/**
+ * 主体结构
+ */
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/**
- * 导航栏
- */
-#navbar {
 	margin: 0px;
 	padding: 0px;
 }
 
-#navbar a:hover, #navbar a:active {
-	color:
+a {
+	text-decoration: none;
+	color: black;
 }
 
-#navbar #navbar-inner {
-	border-radius: 1px;
+a:hover, a:active {
+	color: red;
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: black;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+/**
+ * 导航栏
+
+/*.nav {
+	width: 100%;
+	height: 20px;
+}
+
+.nav .nav-inner {
 	background: url(../img/image1.jpg) repeat-x;
 }
+
+.nav .nav-inner ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.nav .nav-inner ul li {
+	display: inline;
+	color: #FFFFFF;
+}
+
+.nav .nav-inner ul .li-1 {
+	margin-left: 20px;
+	font-size: 25px;
+}
+
+.nav .nav-inner ul .li-2 {
+	margin-left: 30px;
+}
+
+.nav .nav-inner ul .li-3 {
+	margin-right: 30px;
+	float: right;
+}*/
+
+/*.navbar {
+	margin-bottom: 5px;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.lister {
+	position: absolute;
+	left: -9999px;
+	border: 1px solid #CCCCCC;
+	list-style: none;
+	border-radius: 5px;
+	margin: -10px 0px 0px 15px;
+}
+
+.lister li {
+	width: 70px;
+}
+
+.lister li:hover {
+	background: #0088CC;
+
+}
+
+.dropdown:hover .lister {
+	position: absolute;
+	left: 0px;
+	top: 40px;
+	z-index: 10000000000000000;
+}
+*/
+
+.search {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #CCCCCC;
+	background: #FAFAFA;
+	border-top: none;
+}
+
+.search .form-search {
+	display: inline;
+	margin: 130px;
+}
+
+.search .btn-primary {
+	margin-left: 50px;
+}
+
 
 /**
  * 内容样式
  */
 
 .content {
+	border: 1px solid #CCCCCC;
 	width: 100%;
+	height: 600px;
 }
 
-#span2,#span3,#span4 {
-	border: 1px solid #ccc;
-	display: inline-block;
+#span-2, #span-3, #span-4 {
+	border: 1px solid #CCCCCC;
 	margin: 0px;
+	display: inline-table;
+	height: 600px;
+	border-top: none;
 }
 
-#span2 {
-	width: 15%;
+#span-2 {
+	width: 19%;
+	background: #FAFAFA;
 }
 
-#span3 {
+#span-3 {
 	width: 30%;
 }
 
-#span4 {
-	width: 53%;
+#span-4 {
+	width: 49%;
 }
 
+.list {
+	height: 100%;
+	overflow: scroll;
+}
 
+.list .theme {
+	width: 100%;
+	height: 30px;
+	border: none;
+	border-bottom: 1px solid #CCCCCC;
+	background: #F0F0F0;
+	line-height: 30px;
+}
 
+.list .theme .caret {
+	margin: 12px 0px 0px 10px;
+}
+
+.list .theme #lcon2 {
+	margin-left: 100px;
+}
+
+.list .theme span {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.list .lister {
+	list-style-type: none;
+	margin: 0px;
+}
+
+.list .lister li {
+	height: 25px;
+	line-height: 25px;
+	padding-left: 30px;
+}
+
+.list .lister li:hover {
+	background: #D1D4D7;
+}
+
+#span-3 .list .theme span {
+	padding-left: 30px;
+	font-size: 15px;
+}
+
+#span-3 .list .lister li {
+	width: 350px;
+	height: 60px;
+	padding: 10px;
+	overflow: hidden;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+#span-3 .list .lister .link {
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	display: block;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+
+#span-3 .list .lister .time {
+	font-weight: bold;
+	color: #4A8DB8;
+	margin-top: -20px;
+}
+
+#span-4 .list .theme span {
+	padding-left: 20px;
+	font-size: 15px;
+}
 
 

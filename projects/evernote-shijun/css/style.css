@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Microsoft Yahei';
+}
+
+.navbar {
+	margin-bottom: 5px;
+}
+
+#main {
+	height: 90%;
+}
+
+/* 3 column layout */
+#notebooks {
+	width: 13%;
+}
+
+#notes {
+	width: 22%;
+	left: 13%;
+}
+
+#note {
+	width: 61.8%;
+	left: 36.5%;
+}
+
+#notebooks, #notes, #note {
+	padding: 5px;
+	height: 90%;
+	position: absolute;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+/* notebooks */
+#notebooks .nav-header {
+	font-size: 110%;
+}
+
+#notebooks .nav-list {
+	padding: 0;
+}
+
+/* notes */
+#notes {
+	background-color: #FFFFFF;
+	border: 1px solid #A5A5A5;
+	box-shadow: inset 0px 0px 5px #C5C6CC;
+	margin: 0 5px;
+	border-radius: 3px;
+}
+
+#notes .note {
+	border: 1px solid #ffffff;
+	padding: 5px;
+	list-style-type: none;
+	margin: 3px 0;
+	border-radius: 3px;
+}
+
+#notes .note:hover {
+	background-image: -moz-linear-gradient(top, #F9FAFB, #EEF2F7);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#F9FAFB), to(#EEF2F7));
+	background-image: -webkit-linear-gradient(top, #F9FAFB, #EEF2F7);
+	background-image: -o-linear-gradient(top, #F9FAFB, #EEF2F7);
+	background-image: linear-gradient(to bottom, #F9FAFB, #EEF2F7);
+  	border: 1px solid #C3D2E6;
+}
+
+#notes .active {
+	background-image: -moz-linear-gradient(top, #E0E8F1, #CBD8E9);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#E0E8F1), to(#CBD8E9));
+	background-image: -webkit-linear-gradient(top, #E0E8F1, #CBD8E9);
+	background-image: -o-linear-gradient(top, #E0E8F1, #CBD8E9);
+	background-image: linear-gradient(to bottom, #E0E8F1, #CBD8E9);
+  	border: 1px solid #8C9DB6;
+}
+
+#notes .title {
+	font-size: 14px;
+	margin: 0px;
+}
+
+#notes .content {}
+
+#notes .pubdate {
+	color: #4982C2;
+}
+
+#notes .snippet {
+	color: #666666;
+}
+
+/* note */
+#note {
+	border: 1px solid #A5A5A5;
+	box-shadow: inset 0px 0px 5px #C5C6CC;
+	border-radius: 3px;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-webkit-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-image: -webkit-linear-gradient(left, #DEDEDE, #F2F2F2);
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background-image: -webkit-linear-gradient(left, #DEDEDE, #F2F2F2);
+}

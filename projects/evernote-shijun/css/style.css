@@ -24,17 +24,17 @@ body {
 	width: 13%;
 }
 
-#notes {
+#snippets {
 	width: 22%;
 	left: 13%;
 }
 
-#note {
+#detail {
 	width: 61.8%;
 	left: 36.5%;
 }
 
-#notebooks, #notes, #note {
+#notebooks, #snippets, #detail {
 	padding: 5px;
 	height: 90%;
 	position: absolute;
@@ -51,8 +51,8 @@ body {
 	padding: 0;
 }
 
-/* notes */
-#notes {
+/* snippets */
+#snippets {
 	background-color: #FFFFFF;
 	border: 1px solid #A5A5A5;
 	box-shadow: inset 0px 0px 5px #C5C6CC;
@@ -60,7 +60,7 @@ body {
 	border-radius: 3px;
 }
 
-#notes .note {
+#snippets .note {
 	border: 1px solid #ffffff;
 	padding: 5px;
 	list-style-type: none;
@@ -68,7 +68,7 @@ body {
 	border-radius: 3px;
 }
 
-#notes .note:hover {
+#snippets .note:hover {
 	background-image: -moz-linear-gradient(top, #F9FAFB, #EEF2F7);
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#F9FAFB), to(#EEF2F7));
 	background-image: -webkit-linear-gradient(top, #F9FAFB, #EEF2F7);
@@ -77,7 +77,7 @@ body {
   	border: 1px solid #C3D2E6;
 }
 
-#notes .active {
+#snippets .active {
 	background-image: -moz-linear-gradient(top, #E0E8F1, #CBD8E9);
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#E0E8F1), to(#CBD8E9));
 	background-image: -webkit-linear-gradient(top, #E0E8F1, #CBD8E9);
@@ -86,23 +86,23 @@ body {
   	border: 1px solid #8C9DB6;
 }
 
-#notes .title {
+#snippets .title {
 	font-size: 14px;
 	margin: 0px;
 }
 
-#notes .content {}
+#snippets .content {}
 
-#notes .pubdate {
+#snippets .pubdate {
 	color: #4982C2;
 }
 
-#notes .snippet {
+#snippets .snippet {
 	color: #666666;
 }
 
-/* note */
-#note {
+/* detail */
+#detail {
 	border: 1px solid #A5A5A5;
 	box-shadow: inset 0px 0px 5px #C5C6CC;
 	border-radius: 3px;

@@ -60,7 +60,7 @@ body {
 	border-radius: 3px;
 }
 
-#snippets .note {
+#snippets .snippet {
 	border: 1px solid #ffffff;
 	padding: 5px;
 	list-style-type: none;
@@ -68,7 +68,8 @@ body {
 	border-radius: 3px;
 }
 
-#snippets .note:hover {
+#snippets .snippet:hover,
+#snippets .snippet.active:hover {
 	background-image: -moz-linear-gradient(top, #F9FAFB, #EEF2F7);
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#F9FAFB), to(#EEF2F7));
 	background-image: -webkit-linear-gradient(top, #F9FAFB, #EEF2F7);

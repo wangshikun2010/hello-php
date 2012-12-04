@@ -22,6 +22,8 @@ API.prototype.get = function(data, callback) {
 				console.log(response);
 			}
 		});
+
+	return this;
 }
 
 /**
@@ -40,6 +42,8 @@ API.prototype.post = function(data, callback) {
 				console.log(response);
 			}
 		});
+
+	return this;
 }
 
 /**

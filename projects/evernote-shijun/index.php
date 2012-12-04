@@ -55,6 +55,7 @@
 			<ul id="cats" class="nav nav-list">
 				<li class="nav-header">分类列表</li>
 			</ul>
+			<!--
 			<br>
 			<ul id="tags" class="nav nav-list">
 				<li class="nav-header">标签列表</li>
@@ -63,18 +64,12 @@
 				<li class="tag"><a href="#"><i class="icon-tag"></i>HTML</a></li>
 				<li class="tag"><a href="#"><i class="icon-tag"></i>Javascript</a></li>
 			</ul>
+		-->
 		</div>
 
 		<!-- Note list -->
 		<div id="snippets">
 			<ul class="unstyled snippet-view">
-				<li class="note">
-					<h4 class="title">常用软件的激活方法及注册码</h4>
-					<div class="content">
-						<span class="pubdate">2012-12-30</span>
-						<span class="snippet">sdfsdfadfasfsdf常用软件的激活方法及注册码常用软件的激活方法及注册码常用软件的激活方法及注册码</span>
-					</div>
-				</li>
 			</ul>
 		</div>
 
@@ -92,7 +87,7 @@
 
 <!-- Handlebar templates -->
 <script id="notebook-template" type="text/x-handlebars-template">
-	<li class="notebook"><a href="javascript:void(0)"><i class="icon-book"></i>{{name}}({{note_count}})</a></li>
+	<li class="notebook" data-id="{{id}}"><a href="javascript:void(0)"><i class="icon-book"></i>{{name}}({{note_count}})</a></li>
 </script>
 
 <script id="tag-template" type="text/x-handlebars-template">
@@ -100,16 +95,18 @@
 </script>
 
 <script id="snippet-template" type="text/x-handlebars-template">
-	<li class="note">
+	<li class="snippet" data-id="{{id}}">
 		<h4 class="title">{{title}}</h4>
 		<div class="content">
 			<span class="pubdate">{{pubdate}}</span>
-			<span class="snippet">{{snippet}}</span>
+			<span class="abstract">{{abstract}}</span>
 		</div>
 	</li>
 </script>
 
 <script id="detail-template" type="text/x-handlebars-template">
+	<h3>{{title}}</h3>
+	<div>{{content}}</div>
 </script>
 
 </body>

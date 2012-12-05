@@ -41,7 +41,13 @@
                   	<div class="theme">
                   		<b class="caret" id="lcon1"></b>
                   		<span>个人笔记本<span>
-                  		<b class="caret" id="lcon2"></b>
+                  		<b class="borders">
+                                    <b class="select">
+                                          <ul class="aid">
+                                                <li><a href="">新建笔记本</a></li>
+                                          </ul>
+                                    </b>
+                              </b>
                   	</div>
                   	<ul class="lister">
                   		<li class="list-style1">

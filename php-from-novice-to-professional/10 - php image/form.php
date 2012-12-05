@@ -22,7 +22,7 @@ if (isset($_POST['yanzhengma'])){
 ?>
 
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-	<img src="captcha.php"><br/>
+	<img src="captcha_oop.php"><br/>
 	<input type="text" name="yanzhengma" required autofocus/><br/>
 	<input type="submit" value="提交"/>
 </form>

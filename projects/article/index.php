@@ -28,7 +28,7 @@ if (isset($_GET['category_id'])) {
 <div class="container">
 	<?php if (!empty($links)): ?>
 		<p class="text-error"><b>已添加链接</b></p>
-		<p class="text-error">截止目前已经添加了<?php echo count($links); ?>条链接</p>
+		<p class="text-error">已添加<?php echo count($links); ?>条链接</p>
 		<table class="table table-striped table-bordered table-condensed">
 			<thead>
 				<tr>

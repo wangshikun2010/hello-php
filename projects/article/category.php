@@ -13,7 +13,7 @@ $categories = read_category();
 <div class="container">
 	<?php if (!empty($categories)): ?>
 		<p class="text-error"><b>已添加分类</b></p>
-				<p class="text-error">截止目前已经添加了<?php echo count($categories); ?>条链接</p>
+				<p class="text-error">已添加<?php echo count($categories); ?>条分类</p>
 		<table class="table table-striped table-bordered table-condensed">
 			<thead>
 				<tr>

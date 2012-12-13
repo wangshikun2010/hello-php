@@ -21,21 +21,31 @@
 	// 	alert('two');
 	// });
 
-	$('.has_children').click(function() {
-		$(this).addClass('highlight').children('a').show().end()
+	$(document).ready(function() {
+		$('.has_children').click(function() {
+			$(this).addClass('highlight').children('a').show().end()
 
-		.siblings().removeClass('highlight').children('a').hide();
+			.siblings().removeClass('highlight').children('a').hide();
+		});
+
+		$('a').click(function() {
+			$(this).css('background', '#CCCCCC');
+		});
 	});
+
 </script>
 
 <style type="text/css">
 	#menu {
-		width: 300px;
+		width: 1000px;
 	}
 
 	.has_children {
 		background: #555555;
 		cursor: pointer;
+		width: 300px;
+		display: inline-block;
+		border: 2px solid #CCCCCC;
 	}
 
 	.highlight {
@@ -44,14 +54,18 @@
 
 	div {
 		margin: 0px;
-		padding: 10px 0px;
+		padding: 0px;
 	}
 
 	div a {
-		background: #888888;
+		background: #FFFFFF;
 		display: none;
 		float: left;
 		width: 300px;
+	}
+
+	div a:hover {
+		background: #888888;
 	}
 
 </style>

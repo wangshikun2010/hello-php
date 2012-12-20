@@ -2,7 +2,7 @@
  * 主体结构
  */
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
 	margin: 0px;
 	padding: 0px;
 }
@@ -118,19 +118,19 @@ a:link, a:visited {
 	font-weight: bold;
 }
 
-.list .lister {
+.list .notes {
 	list-style-type: none;
 	margin: 0px;
 	width: 100%;
 }
 
-.list .lister li {
+.list .notes li {
 	height: 25px;
 	line-height: 25px;
 	padding-left: 10px;
 }
 
-.list .lister li:hover {
+.list .notes li:hover {
 	background: #D1D4D7;
 }
 
@@ -164,29 +164,12 @@ a:link, a:visited {
 /**
  * 私有样式
  */
-#span-2 .list .theme .borders {
-	display: block;
+#span-2 .list .theme .pull-right {
+	margin: 8px 10px 0px 0px;
 }
 
-#span-2 .list .theme .borders .select:hover .aid {
-	display: block;
-}
-
-#span-2 .list .theme .borders .select:hover .aid li:hover {
-	background: #D1D4D7;
-}
-
-#span-2 .list .lister .list-style1 .book {
-	background: url(../img/glyphicons-halflings.png) -45px -48px no-repeat;
-	padding-left: 20px;
-}
-
-#span-2 .list .lister li:hover .borders {
-	display: block;
-}
-
-#span-2 .list .lister .borders .select:hover .aid {
-	display: block;
+#span-2 .list .theme .pull-right:hover {
+	cursor: pointer;
 }
 
 #span-3 .list .theme span {
@@ -194,15 +177,15 @@ a:link, a:visited {
 	font-size: 15px;
 }
 
-#span-3 .list .lister li {
-	width: 100%;
+#span-3 .list .notes li {
+	display: block;
 	height: 60px;
 	padding: 10px;
 	overflow: hidden;
 	border-bottom: 1px solid #CCCCCC;
 }
 
-#span-3 .list .lister .link {
+#span-3 .list .notes .link {
 	width: 100%;
 	height: 20px;
 	line-height: 20px;
@@ -212,7 +195,7 @@ a:link, a:visited {
 	padding: 0px;
 }
 
-#span-3 .list .lister .time {
+#span-3 .list .notes .time {
 	font-weight: bold;
 	color: #4A8DB8;
 	margin-top: -20px;

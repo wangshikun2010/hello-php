@@ -6,7 +6,7 @@
 <title>显示和隐藏元素</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
-<lik href="" rel="stylesheet">
+<link href="" rel="stylesheet">
 <script type="text/javascript" src="../jquery-1.8.3.js"></script>
 <style type="text/css">
 	body,ul,p {
@@ -56,20 +56,34 @@
 		$category.hide();
 
 		//点击链接显示或者隐藏
-		$('div.showmore a').click(function() {
-			if($category.is(':visible')) {
-				$category.hide(3000,function() {
-					alert('部分商品已被隐藏');
-				});
-				$('div.showmore a span').text('显示全部品牌');
-			} else{
-				$category.show(2000,function() {
-					alert('已经显示全部商品');
-				});
-				$('div.showmore a span').text('精简显示品牌');
-			}
+		// $('div.showmore a').click(function() {
+		// 	if ($category.is(':visible')) {
+		// 		$category.hide(3000,function() {
+		// 			alert('部分商品已被隐藏');
+		// 		});
+		// 		$('div.showmore a span').text('显示全部品牌');
+		// 	} else{
+		// 		$category.show(2000,function() {
+		// 			alert('已经显示全部商品');
+		// 		});
+		// 		$('div.showmore a span').text('精简显示品牌');
+		// 	}
 
-			return false;
+		// 	return false;
+		// });
+
+		$('div.showmore a').toggle(function() {
+			$category.hide(null, function() {
+				console.log( $(this).text() + 'is hidden!');
+			});
+			// alert('部分商品已被隐藏');
+			$('div.showmore a span').text('显示全部品牌');
+		},function() {
+			$category.show(null, function() {
+				console.log( $(this).text() + 'is visible!');
+			});
+			// alert('已经显示全部商品');
+			$('div.showmore a span').text('精简显示品牌');
 		});
 	});
 </script>

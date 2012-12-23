@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>添加和删除文本</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<script type="text/javascript" src="../jquery-1.8.3.js"></script>
+<style type="text/css">
+	body {
+		font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	div#content {
+		width: 600px;
+		margin: auto;
+		margin-top: 10px;
+		padding: 20px;
+		border: 1px solid #CCCCCC;
+		background: #EEF3FA;
+		border-radius: 5px;
+	}
+
+	h2 {
+		margin: 0px 0px 15px 0px;
+		color: #B1A9B1;
+	}
+
+	input:focus {
+		outline: none;
+	}
+
+	#text {
+		height: 25px;
+		font-size: 25px;
+		border-radius: 3px;
+		color: #B847FF;
+	}
+
+	#button {
+		height: 30px;
+		font-size: 20px;
+		margin-top: 0px;
+		float: right;
+	}
+
+	#checkbox-all {
+		margin-top: 10px;
+	}
+
+	#label-all, #cancel-all {
+		display: none;
+	}
+
+	ul {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	ul li {
+		list-style-type: none;
+		padding-top: 10px;
+		padding-bottom: 5px;
+		border-bottom: 2px solid #CCCCCC;
+	}
+
+	ul li .view .delete-li {
+		background: url(./images/glyphicons-halflings.png) no-repeat -310px 5px;
+		float: right;
+		width: 20px;
+		height: 20px;
+		cursor: pointer;
+		display: none;
+	}
+
+	ul li .view .delete-li:hover {
+		background: url(./images/glyphicons-halflings-white.png) no-repeat -310px 5px;
+	}
+
+	ul li:hover .delete-li {
+		display: block;
+	}
+
+	#footer {
+		margin-top: 20px;
+		display: none;
+	}
+
+	#clear {
+		float: right;
+		border: 1px solid #CCCCCC;
+		background: #F5F5F5;
+		padding: 2px 15px;
+		cursor: pointer;
+		border-radius: 15px;
+	}
+
+	#clear:hover {
+		background: #F8F0E3;
+	}
+
+	.selected {
+		text-decoration: line-through;
+		color: red;
+	}
+</style>
+<script type="text/javascript">
+	$(function() {
+		$('#button').click(function() {
+			var input_text = $('#text').val();
+
+			if (input_text == '') {
+				return false;
+			}
+
+			//添加新项目到ul
+			var li = $('<li><div class="view"><input type="checkbox" id="item" name="item"><label for="item"></label><a class="delete-li"></a></div></li>');
+			var ul = $('ul');
+			li.find('.view label').text(input_text);
+			li.prependTo(ul);
+
+			//添加之后将输入框的内容清空
+			$('#text').val('');
+
+			//添加元素之后显示隐藏的内容
+			$('#label-all, #cancel-all').css('display','inline');
+			$('#footer').css('display','block');
+		})
+
+		//选中全部
+		$('#checkbox-all').click(function() {
+			$('[name="item"]').attr('checked','true');
+		})
+
+		//取消全部
+		$('#cancel-all').click(function() {
+			$('[name="item"]').removeAttr('checked');
+		})
+
+		var checked = $('ul :checked');
+		console.log(checked);
+		var span = $('#surplus');
+		span.text('剩余'+checked.length+'项');
+
+		//删除一条项目
+		$('.delete-li').click(function() {
+			$(this).parents('li').remove();
+		})
+	})
+</script>
+</head>
+<body>
+	<div id="content">
+		<h2>待办事项</h2>
+		<label for="text">
+			<input type="text" id="text" size="40" maxlength="50" placeholder="输入要做的事">
+		</label>
+		<button type="button" id="button">添加</button><br/>
+		<label id="label-all">
+			<input type="checkbox" name="checkbox" id="checkbox-all" value="all">全部选中
+		</label>
+		<label id="cancel-all">
+			<input type="checkbox" name="checkbox" id="cancel-all" value="empty">取消全选
+		</label>
+
+
+<!-- 	<ul>
+			<li>
+				<div class="view">
+					<input type="checkbox" id="item">
+					<label for="item"></label>
+					<a class="delete-li"></a>
+				</div>
+			</li>
+		</ul> -->
+		<ul></ul>
+
+		<div id="footer">
+			<span id="surplus"></span>
+			<span id="clear">清除已完成的几个项目</span>
+		</div>
+	</div>
+</body>
+</html>

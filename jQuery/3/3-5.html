@@ -41,18 +41,15 @@
 		color: #B847FF;
 	}
 
-	#button {
-		height: 30px;
-		font-size: 20px;
-		margin-top: 0px;
-		float: right;
+	#submit {
+		display: none;
 	}
 
 	#checkbox-all {
 		margin-top: 10px;
 	}
 
-	#label-all, #cancel-all {
+	#label-all {
 		display: none;
 	}
 
@@ -63,8 +60,7 @@
 
 	ul li {
 		list-style-type: none;
-		padding-top: 10px;
-		padding-bottom: 5px;
+		padding: 15px 0px;
 		border-bottom: 2px solid #CCCCCC;
 	}
 
@@ -110,63 +106,60 @@
 </style>
 <script type="text/javascript">
 	$(function() {
-		$('#button').click(function() {
+		// $('input:text:first').focus(); //把焦点放在第一个文本框
+
+		$('form').submit(function(event) {
 			var input_text = $('#text').val();
+			var li = $('<li><div class="view"><input type="checkbox" id="item" name="item"><label for="item"></label><a class="delete-li"></a></div></li>');
+			var ul = $('ul');
+
+			$('#label-all, #footer').css('display','block');
+			$('#surplus').text('完成0项');
+
+			$('input[type="checkbox"]').click(function() {
+				var checked = $('input[name="item"]:checked').length;
+				// console.log(checked);
+				$('#surplus').text('完成'+checked+'项');
+			})
 
 			if (input_text == '') {
 				return false;
 			}
 
 			//添加新项目到ul
-			var li = $('<li><div class="view"><input type="checkbox" id="item" name="item"><label for="item"></label><a class="delete-li"></a></div></li>');
-			var ul = $('ul');
 			li.find('.view label').text(input_text);
+			li.find('.delete-li').click(function() { //删除一条项目
+				$(this).parents('li').remove();
+			})
 			li.prependTo(ul);
 
 			//添加之后将输入框的内容清空
 			$('#text').val('');
 
-			//添加元素之后显示隐藏的内容
-			$('#label-all, #cancel-all').css('display','inline');
-			$('#footer').css('display','block');
+			event.preventDefault();
 		})
 
-		//选中全部
-		$('#checkbox-all').click(function() {
-			$('[name="item"]').attr('checked','true');
+		//选中全部或取消全部
+		$('#checkbox-all').change(function() {
+			$('[name="item"]').attr('checked',this.checked);
 		})
 
-		//取消全部
-		$('#cancel-all').click(function() {
-			$('[name="item"]').removeAttr('checked');
-		})
-
-		var checked = $('ul :checked');
-		console.log(checked);
-		var span = $('#surplus');
-		span.text('剩余'+checked.length+'项');
-
-		//删除一条项目
-		$('.delete-li').click(function() {
-			$(this).parents('li').remove();
-		})
 	})
 </script>
 </head>
 <body>
 	<div id="content">
 		<h2>待办事项</h2>
-		<label for="text">
-			<input type="text" id="text" size="40" maxlength="50" placeholder="输入要做的事">
-		</label>
-		<button type="button" id="button">添加</button><br/>
+		<form action="">
+			<label for="text">
+				<input type="text" id="text" size="40" maxlength="50" placeholder="输入要做的事" autofocus required>
+			</label>
+			<button type="submit" id="submit"></button><br/>
+		</form>
+
 		<label id="label-all">
 			<input type="checkbox" name="checkbox" id="checkbox-all" value="all">全部选中
 		</label>
-		<label id="cancel-all">
-			<input type="checkbox" name="checkbox" id="cancel-all" value="empty">取消全选
-		</label>
-
 
 <!-- 	<ul>
 			<li>
@@ -180,7 +173,7 @@
 		<ul></ul>
 
 		<div id="footer">
-			<span id="surplus"></span>
+			<span id="surplus">完成0项</span>
 			<span id="clear">清除已完成的几个项目</span>
 		</div>
 	</div>

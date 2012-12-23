@@ -34,11 +34,27 @@
 		outline: none;
 	}
 
-	#text {
+	input#text {
 		height: 25px;
 		font-size: 25px;
-		border-radius: 3px;
 		color: #B847FF;
+		padding: 5px;
+		outline: none;
+		text-shadow: 0px 1px 0px #fff;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		border: 1px solid #ccc;
+		-webkit-transition: .3s ease-in-out;
+		-moz-transition: .3s ease-in-out;
+		-o-transition: .3s ease-in-out;
+	}
+
+	input#text:focus {
+		border: 1px solid #fafafa;
+		-webkit-box-shadow: 0px 0px 6px #007eff;
+		-moz-box-shadow: 0px 0px 5px #007eff;
+		box-shadow: 0px 0px 5px #007eff;
 	}
 
 	#submit {
@@ -115,12 +131,7 @@
 
 			$('#label-all, #footer').css('display','block');
 			$('#surplus').text('完成0项');
-
-			$('input[type="checkbox"]').click(function() {
-				var checked = $('input[name="item"]:checked').length;
-				// console.log(checked);
-				$('#surplus').text('完成'+checked+'项');
-			})
+			$('#clear').text('清除已完成的0个项目');
 
 			if (input_text == '') {
 				return false;
@@ -130,6 +141,26 @@
 			li.find('.view label').text(input_text);
 			li.find('.delete-li').click(function() { //删除一条项目
 				$(this).parents('li').remove();
+			})
+
+			//计数
+			li.find('input[type="checkbox"][name="item"]').click(function() {
+				var checked = $('input[name="item"]:checked');
+				if ($('input[name="item"]').is(':checked')) {
+					checked.next('label').attr('class','selected');
+				} else {
+					checked.next('label').removeAttr('class');
+				}
+				// console.log(checked);
+				$('#surplus').text('完成' + checked.length + '项');
+				$('#clear').text('清除已完成的' + checked.length + '个项目');
+				$('#clear').click(function() {
+					if(checked) {
+						checked.parents('li').remove();
+						$('#surplus').text('完成0项');
+						$('#clear').text('清除已完成的0个项目');
+					}
+				})
 			})
 			li.prependTo(ul);
 
@@ -142,7 +173,23 @@
 		//选中全部或取消全部
 		$('#checkbox-all').change(function() {
 			$('[name="item"]').attr('checked',this.checked);
+			var checked = $('input[name="item"]:checked');
+			if(checked.length > 0) {
+				checked.next('label').attr('class','selected');
+				$('#clear').click(function() {
+					if(checked) {
+						checked.parents('li').remove();
+						$('#surplus').text('完成0项');
+						$('#clear').text('清除已完成的0个项目');
+					}
+				})
+			} else {
+				checked.next('label').removeAttr('class');
+			}
+			// console.log(checked.length);
+			$('#surplus').text('完成' + checked.length + '项');
 		})
+
 
 	})
 </script>
@@ -164,7 +211,7 @@
 <!-- 	<ul>
 			<li>
 				<div class="view">
-					<input type="checkbox" id="item">
+					<input type="checkbox" id="item" name="item">
 					<label for="item"></label>
 					<a class="delete-li"></a>
 				</div>

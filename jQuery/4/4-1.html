@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>图片转动</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<script type="text/javascript" src="../jquery-1.8.3.js"></script>
+<style type="text/css">
+	/*整体部分*/
+	body,div {
+		font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	a {
+		color: #044488;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: red;
+	}
+
+	.v_show {
+		width: 600px;
+		border: 1px solid #CCCCCC;
+		margin: 20px auto;
+	}
+
+	/*导航*/
+	.v_caption {
+		height: 35px;
+		background: #CCCCCC;
+		padding: 5px;
+	}
+
+	.v_caption h2 {
+		margin: 0px;
+		display: inline;
+		float: left;
+	}
+
+	.v_caption .cartoon {
+		background-position: 0 -100px;
+	}
+
+	.v_caption .variety {
+		background-position: -100px -100px;
+	}
+
+	.highlight_tip {
+		display: inline;
+		float: left;
+		margin: 14px 0 0 10px;
+	}
+
+	.highlight_tip span {
+		display: inline;
+		float: left;
+		width: 7px;
+		height: 7px;
+		overflow: hidden;
+		margin: 0 2px;
+		background: url(img/btn_cartoon.gif) no-repeat 0 -320px;
+		text-indent: -9999px;
+	}
+
+	.highlight_tip .current {
+		background-position: 0 -220px;
+	}
+
+	.change_btn {
+		float: left;
+		margin: 7px 0 0 10px;
+	}
+
+	.change_btn span {
+		display: block;
+		float: left;
+		width: 30px;
+		height: 23px;
+		overflow: hidden;
+		background: url(img/btn_cartoon.gif) no-repeat;
+		text-indent: -9999px;
+		cursor: pointer;
+	}
+
+	.change_btn .prev {
+		background-position: 0 -400px;
+	}
+
+	.change_btn .next {
+		width: 31px;
+		background-position: -30px -400px;
+	}
+
+	.v_caption em {
+		display: inline;
+		float: right;
+		margin: 5px 12px 0 0;
+	}
+
+	/*内容*/
+	.v_content {
+		position: relative;
+		width: 600px;
+		height: 150px;
+		overflow: hidden;
+	}
+
+	.v_content_list {
+		position: absolute;
+		width: 2500px;
+		left: 0px;
+	}
+
+	.v_content ul {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.v_content ul li {
+		display: inline;
+		float: left;
+		margin: 10px 2px 0;
+		padding: 8px;
+	}
+
+	.v_content ul li a {
+		display: block;
+		width: 128px;
+		overflow: hidden;
+	}
+
+	.v_content ul li img {
+	 	width: 125px;
+		height: 100px;
+	}
+</style>
+<script type="text/javascript">
+$(function() {
+	$('.next').click(function() {
+		var page = 1;
+		var i = 4;
+		var parent = $(this).parents('.v_show');
+		var v_show = parent.find('.v_content_list');
+		var v_content = parent.find('.v_content');
+		var width = v_content.width();
+
+		var len = v_show.find('li').length;
+		var page_count = Math.ceil(len / i);
+
+		if(!v_show.is(':animated')) {
+			if (page == page_count) {
+				v_show.animate({left : '0px'}, 'slow');
+				page = 1;
+			} else {
+				v_show.animate({left : '-='+width}, 'slow');
+				page++;
+			}
+		}
+
+		parent.find('.highlight_tip span').eq((page-1)).addClass('current').siblings().removeClass('current');
+	})
+
+	$('.prev').click(function() {
+		var page = 1;
+		var i = 4;
+		var parent = $(this).parents('.v_show');
+		var v_show = parent.find('.v_content_list');
+		var v_content = parent.find('.v_content');
+		var width = v_content.width();
+
+		var len = v_show.find('li').length;
+		var page_count = Math.ceil(len / i);
+
+		if(!v_show.is(':animated')) {
+			if (page == page_count) {
+				v_show.animate({left : '-='+width*(page_count-1) }, 'slow');
+				page = page_count;
+			} else {
+				v_show.animate({left : '+='+width}, 'slow');
+				page--;
+			}
+		}
+
+		parent.find('.highlight_tip span').eq((page-1)).addClass('current').siblings().removeClass('current');
+	})
+})
+</script>
+</head>
+<body>
+<div class="v_show">
+	<div class="v_caption">
+		<h2 class="cartoon" title="卡通动漫">卡通动漫</h2>
+		<div class="highlight_tip">
+			<span class="current">1</span>
+			<span>2</span>
+			<span>3</span>
+			<span>4</span>
+		</div>
+		<div class="change_btn">
+			<span class="prev" >上一页</span>
+			<span class="next">下一页</span>
+		</div>
+		<em><a href="#">更多>></a></em>
+	</div>
+	<div class="v_content">
+		<div class="v_content_list">
+			<ul>
+				<li><a href="#"><img src="img/01.jpg" alt="海贼王" /></a><a href="#">海贼王</a></li>
+				<li><a href="#"><img src="img/01.jpg" alt="海贼王" /></a><a href="#">海贼王</a></li>
+				<li><a href="#"><img src="img/01.jpg" alt="海贼王" /></a><a href="#">海贼王</a></li>
+				<li><a href="#"><img src="img/01.jpg" alt="海贼王" /></a><a href="#">海贼王</a></li>
+				<li><a href="#"><img src="img/02.jpg" alt="哆啦A梦" /></a><a href="#">哆啦A梦</a></li>
+				<li><a href="#"><img src="img/02.jpg" alt="哆啦A梦" /></a><a href="#">哆啦A梦</a></li>
+				<li><a href="#"><img src="img/02.jpg" alt="哆啦A梦" /></a><a href="#">哆啦A梦</a></li>
+				<li><a href="#"><img src="img/02.jpg" alt="哆啦A梦" /></a><a href="#">哆啦A梦</a></li>
+				<li><a href="#"><img src="img/03.jpg" alt="火影忍者" /></a><a href="#">火影忍者</a></li>
+				<li><a href="#"><img src="img/03.jpg" alt="火影忍者" /></a><a href="#">火影忍者</a></li>
+				<li><a href="#"><img src="img/03.jpg" alt="火影忍者" /></a><a href="#">火影忍者</a></li>
+				<li><a href="#"><img src="img/03.jpg" alt="火影忍者" /></a><a href="#">火影忍者</a></li>
+				<li><a href="#"><img src="img/04.jpg" alt="龙珠" /></a><a href="#">龙珠</a></li>
+				<li><a href="#"><img src="img/04.jpg" alt="龙珠" /></a><a href="#">龙珠</a></li>
+				<li><a href="#"><img src="img/04.jpg" alt="龙珠" /></a><a href="#">龙珠</a></li>
+				<li><a href="#"><img src="img/04.jpg" alt="龙珠" /></a><a href="#">龙珠</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>

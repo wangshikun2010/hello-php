@@ -34,7 +34,7 @@
 		outline: none;
 	}
 
-	input#text {
+	input#text,input#edit_text {
 		height: 25px;
 		font-size: 25px;
 		color: #B847FF;
@@ -50,7 +50,7 @@
 		-o-transition: .3s ease-in-out;
 	}
 
-	input#text:focus {
+	input#text:focus,input#edit_text:focus {
 		border: 1px solid #fafafa;
 		-webkit-box-shadow: 0px 0px 6px #007eff;
 		-moz-box-shadow: 0px 0px 5px #007eff;
@@ -129,9 +129,8 @@
 			var li = $('<li><div class="view"><input type="checkbox" id="item" name="item"><label for="item"></label><a class="delete-li"></a></div></li>');
 			var ul = $('ul');
 
+			//显示隐藏的元素
 			$('#label-all, #footer').css('display','block');
-			$('#surplus').text('完成0项');
-			$('#clear').text('清除已完成的0个项目');
 
 			if (input_text == '') {
 				return false;
@@ -148,6 +147,7 @@
 				var checked = $('input[name="item"]:checked');
 				if ($('input[name="item"]').is(':checked')) {
 					checked.next('label').attr('class','selected');
+					$('input[name="checkbox"]').attr('checked',false);
 				} else {
 					checked.next('label').removeAttr('class');
 				}
@@ -155,12 +155,17 @@
 				$('#surplus').text('完成' + checked.length + '项');
 				$('#clear').text('清除已完成的' + checked.length + '个项目');
 				$('#clear').click(function() {
-					if(checked) {
+					if (checked) {
 						checked.parents('li').remove();
 						$('#surplus').text('完成0项');
 						$('#clear').text('清除已完成的0个项目');
 					}
 				})
+			})
+			li.find('.view label').dblclick(function() {
+				var edit_text = $('<input type="text" name="edit" id="edit_text">');
+				$(this).parents('li').find('div').after(edit_text).val($(this).text());
+
 			})
 			li.prependTo(ul);
 
@@ -172,14 +177,19 @@
 
 		//选中全部或取消全部
 		$('#checkbox-all').change(function() {
+			//切换复选框的样式
 			$('[name="item"]').attr('checked',this.checked);
+
 			var checked = $('input[name="item"]:checked');
-			if(checked.length > 0) {
+			$('#clear').text('清除已完成的' + checked.length + '个项目');
+
+			//删除按下全选的li
+			if (checked.length > 0) {
 				checked.next('label').attr('class','selected');
 				$('#clear').click(function() {
-					if(checked) {
+					if (checked) {
 						checked.parents('li').remove();
-						$('#surplus').text('完成0项');
+						$('input[name="checkbox"]').attr('checked',false);
 						$('#clear').text('清除已完成的0个项目');
 					}
 				})
@@ -221,7 +231,7 @@
 
 		<div id="footer">
 			<span id="surplus">完成0项</span>
-			<span id="clear">清除已完成的几个项目</span>
+			<span id="clear">清除已完成的0个项目</span>
 		</div>
 	</div>
 </body>

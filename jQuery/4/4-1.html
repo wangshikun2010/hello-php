@@ -25,31 +25,23 @@
 		color: red;
 	}
 
-	.v_show {
+	.show {
 		width: 600px;
 		border: 1px solid #CCCCCC;
 		margin: 20px auto;
 	}
 
 	/*导航*/
-	.v_caption {
+	.caption {
 		height: 35px;
 		background: #CCCCCC;
 		padding: 5px;
 	}
 
-	.v_caption h2 {
+	.caption h2 {
 		margin: 0px;
 		display: inline;
 		float: left;
-	}
-
-	.v_caption .cartoon {
-		background-position: 0 -100px;
-	}
-
-	.v_caption .variety {
-		background-position: -100px -100px;
 	}
 
 	.highlight_tip {
@@ -98,104 +90,105 @@
 		background-position: -30px -400px;
 	}
 
-	.v_caption em {
+	.caption em {
 		display: inline;
 		float: right;
 		margin: 5px 12px 0 0;
 	}
 
 	/*内容*/
-	.v_content {
+	.content {
 		position: relative;
 		width: 600px;
 		height: 150px;
 		overflow: hidden;
 	}
 
-	.v_content_list {
+	.content_list {
 		position: absolute;
 		width: 2500px;
 		left: 0px;
 	}
 
-	.v_content ul {
+	.content ul {
 		margin: 0px;
 		padding: 0px;
 	}
 
-	.v_content ul li {
+	.content ul li {
 		display: inline;
 		float: left;
 		margin: 10px 2px 0;
-		padding: 8px;
+		padding: 8px 9px;
 	}
 
-	.v_content ul li a {
+	.content ul li a {
 		display: block;
 		width: 128px;
 		overflow: hidden;
 	}
 
-	.v_content ul li img {
-	 	width: 125px;
+	.content ul li img {
+	 	width: 130px;
 		height: 100px;
 	}
 </style>
 <script type="text/javascript">
 $(function() {
-	$('.next').click(function() {
-		var page = 1;
-		var i = 4;
-		var parent = $(this).parents('.v_show');
-		var v_show = parent.find('.v_content_list');
-		var v_content = parent.find('.v_content');
-		var width = v_content.width();
+	var page = 1;
+	var page_size = 4;
+	var content = $('.content');
+	var list = $('.content_list');
+	var width = content.width();
 
-		var len = v_show.find('li').length;
-		var page_count = Math.ceil(len / i);
+	var length = list.find('li').length;
+	var page_count = Math.ceil(length / page_size);
 
-		if(!v_show.is(':animated')) {
+	// console.log('length = ' + length);
+	// console.log('page_size = ' + page_size);
+	// console.log('page_count = ' + page_count);
+
+	$('.next').click(next = function() {
+
+		if (!list.is(':animated')) {
 			if (page == page_count) {
-				v_show.animate({left : '0px'}, 'slow');
+				list.animate({left : '0px'}, 1000);
 				page = 1;
 			} else {
-				v_show.animate({left : '-='+width}, 'slow');
+				list.animate({left : '-='+width}, 1000);
 				page++;
 			}
 		}
 
-		parent.find('.highlight_tip span').eq((page-1)).addClass('current').siblings().removeClass('current');
+		$(this).parents('.caption').find('span').eq((page-1))
+		.addClass('current').siblings()
+		.removeClass('current');
 	})
 
 	$('.prev').click(function() {
-		var page = 1;
-		var i = 4;
-		var parent = $(this).parents('.v_show');
-		var v_show = parent.find('.v_content_list');
-		var v_content = parent.find('.v_content');
-		var width = v_content.width();
-
-		var len = v_show.find('li').length;
-		var page_count = Math.ceil(len / i);
-
-		if(!v_show.is(':animated')) {
-			if (page == page_count) {
-				v_show.animate({left : '-='+width*(page_count-1) }, 'slow');
+		if(!list.is(':animated')) {
+			if (page == 1) {
+				list.animate({left : '-='+width*(page_count-1) }, 'slow');
 				page = page_count;
 			} else {
-				v_show.animate({left : '+='+width}, 'slow');
+				list.animate({left : '+='+width}, 'slow');
 				page--;
 			}
 		}
 
-		parent.find('.highlight_tip span').eq((page-1)).addClass('current').siblings().removeClass('current');
+		$(this).parents('.caption').find('span').eq((page-1))
+		.addClass('current').siblings()
+		.removeClass('current');
 	})
+
+	self.setInterval('next()', 3000);
+
 })
 </script>
 </head>
 <body>
-<div class="v_show">
-	<div class="v_caption">
+<div class="show">
+	<div class="caption">
 		<h2 class="cartoon" title="卡通动漫">卡通动漫</h2>
 		<div class="highlight_tip">
 			<span class="current">1</span>
@@ -209,8 +202,8 @@ $(function() {
 		</div>
 		<em><a href="#">更多>></a></em>
 	</div>
-	<div class="v_content">
-		<div class="v_content_list">
+	<div class="content">
+		<div class="content_list">
 			<ul>
 				<li><a href="#"><img src="img/01.jpg" alt="海贼王" /></a><a href="#">海贼王</a></li>
 				<li><a href="#"><img src="img/01.jpg" alt="海贼王" /></a><a href="#">海贼王</a></li>

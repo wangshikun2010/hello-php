@@ -3,8 +3,19 @@ $(function() {
 	var input = $('#notebook-name'); //输入框
 	var mode = 'add'; //模式
 	var notebook = null; //当前的笔记本
-	var first_li = $('.notebook-item').html();
+	var first_li = $('.notebook-item').html('
+				<li class="notebook-item">
+					<a href="" data-id="1">PHP</a>
+					<span class="dropdown pull-right">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">管理<b class="caret"></b></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+							<li><a class="edit-notebook" tabindex="-1" href="javascript:void(0)">编辑</a></li>
+							<li><a class="delete-notebook" tabindex="-1" href="javascript:void(0)">删除</a></li>
+						</ul>
+					</span>
+				</li>');
 	// alert(first_li);
+	// console.log(first_li);
 
 	$('#add-notebook').click(function() {
 		if ($('#notebook-list').is(':empty')) {

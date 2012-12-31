@@ -28,7 +28,7 @@
 						<input type="text" class="span2 search-query">
 						<button type="submit" class="btn">Search</button>
 					</div>
-					<button type="button" class="btn new-btn">新建笔记</buttom>
+					<button type="button" class="btn new-btn">新建笔记</button>
 				</form>
 			</div>
 		</div>
@@ -38,13 +38,14 @@
 <div class="content">
 	<div id="span-2">
 		<div class="list">
-			<div class="theme">
-				<b class="caret" id="lcon1"></b>
-				<span>个人笔记本<span>
+			<div class="notebook-title">
+				<b class="caret"></b>
+				<span>个人笔记本</span>
 				<i class="icon-plus pull-right" id="add-notebook">&nbsp;</i>
 			</div>
 			<ul class="notebooks" id="notebook-list">
 				<li class="notebook-item">
+					<b class="icon"></b>
 					<a href="" data-id="1">PHP</a>
 					<span class="dropdown pull-right">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#">管理<b class="caret"></b></a>
@@ -59,22 +60,22 @@
 	</div>
 	<div id="span-3">
 		<div class="list">
-			<div class="theme">
-				<span>标题<span>
+			<div class="notebook-title">
+				<span>标题</span>
 			</div>
 			<ul class="notes">
 				<li>
 					<a class="link" href="">第一条信息</a>
 					<a class="time" href="">时间</a>
-					<span class="detail">XXXXXXXX<span>
+					<span class="detail">XXXXXXXX</span>
 				</li>
 			</ul>
 		</div>
 	</div>
 	<div id="span-4">
 		<div class="list">
-			<div class="theme">
-				<span>文章标题<span>
+			<div class="notebook-title">
+				<span>文章标题</span>
 			</div>
 			<form action="" method="post">
 				<textarea name="text" rows="20" cols="50">

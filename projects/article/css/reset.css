@@ -5,3 +5,23 @@ body,input,option {
 .container {
 	width: 1200px;
 }
+
+#nav-list li:hover {
+	background: #D4D4D4;
+}
+
+.current {
+	background: #D4D4D4;
+}
+
+#input-search {
+	margin-top: 8px;
+	float: right;
+}
+
+#not-search {
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+}
+

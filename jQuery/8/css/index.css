@@ -1,0 +1,378 @@
+/*总体部分*/
+* {
+	margin: 0px;
+	padding: 0px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+body {
+	background: #FFFFFF;
+	color: #333333;
+	font: 12px/1.6em "Microsoft Yahei",Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #0287CA;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: red;
+}
+
+ul, li {
+	list-style: none;
+}
+
+img {
+	border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1em;
+}
+
+html {
+	overflow: -moz-scrollbars-vertical;
+}/* 在Firefox下始终显示滚动条*/
+
+/*header*/
+#header {
+	width: auto;
+	max-width: 100%;
+	height: 30px;
+	background: #3B5998;
+	display: block;
+	padding: 0px 100px;
+}
+
+/*logo样式开始*/
+#logo {
+	float: left;
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+/*切换皮肤样式*/
+#skin {
+	float: right;
+	padding: 4px;
+	margin: 3px 0px;
+	width: 120px;
+	list-style: none;
+	border: 1px solid #CCCCCC;
+	background: #FFF;
+}
+
+#skin li {
+	float: left;
+	margin-right: 4px;
+	width: 15px;
+	height: 15px;
+	text-indent: -9999px;
+	overflow: hidden;
+	display: block;
+	cursor: pointer;
+	background-image: url(../images/theme.gif);
+}
+
+#skin_0 {background-position: 0px 0px; }
+#skin_1 {background-position: 15px 0px; }
+#skin_2 {background-position: 35px 0px; }
+#skin_3 {background-position: 55px 0px; }
+#skin_4 {background-position: 75px 0px; }
+#skin_5 {background-position: 95px 0px; }
+#skin_0.selected {background-position: 0px 15px; }
+#skin_1.selected {background-position: 15px 15px; }
+#skin_2.selected {background-position: 35px 15px; }
+#skin_3.selected {background-position: 55px 15px; }
+#skin_4.selected {background-position: 75px 15px; }
+#skin_5.selected {background-position: 95px 15px; }
+
+/*导航样式开始*/
+#navigation {
+	width: auto;
+	margin: 20px 100px;
+	background: #3B5998;
+	height: 30px;
+	border-radius: 3px;
+}
+
+#navigation #navigation-list {
+	padding-left: 20px;
+}
+
+#navigation #navigation-list li {
+	float: left;
+	position: relative ;
+	z-index: 100;
+	height: 30px;
+	line-height: 30px;
+	border-right: 1px solid #FFFFFF;
+}
+
+#navigation #navigation-list li a {
+	display: block;
+	padding: 0 18px;
+	background: #EEEEEE;
+	font-weight: bold;
+}
+
+#navigation #navigation-list li a:hover {
+	background: #FFFFFF;
+}
+
+#navigation #navigation-list li ul {
+	background-color: #88C366;
+	position: absolute;
+	width: 80px;
+	overflow:hidden;
+	display:none;
+}
+
+#navigation #navigation-list li:hover ul {
+	background-color: #88C366;
+	position: absolute;
+	width: 100px;
+	display:block;
+}
+
+#navigation #navigation-list li ul li {
+	border-bottom: 1px solid #BBBBBB;
+	text-align: left;
+	width: 100%;
+}
+
+/*content*/
+#content{
+	width: auto;
+	margin: 0px 100px;
+	border: 1px solid #CCCCCC;
+	height: 450px;
+}
+
+/*左侧样式*/
+.content_left {
+	background: #EEEEEE;
+	border: 1px solid #AAAAAA;
+	width: 200px;
+	float: left;
+	margin-right: 10px;
+}
+
+.global_module {
+	position: relative;
+	background: #EEEEEE;
+}
+
+.module_up_down {
+	position: absolute;
+	top: 4px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.global_module h3 {
+	height: 26px;
+	background: #3B5998;
+	color: #FFFFFF;
+	line-height: 26px;
+	text-indent: 10px;
+}
+
+.content_left .news ul {
+	padding: 5px 0 5px 15px;
+}
+
+.content_left .procatalog ul {
+	padding: 5px 0 5px 15px;
+}
+
+/*最新动态样式*/
+.content_left .scrollNews {
+	width: 200px;
+	height: 85px;
+	overflow: hidden;
+	background: #FFFFFF;
+}
+
+.content_left .scrollNews li {
+	height: 20px;
+}
+
+/**产品分类样式**/
+.procatalog .m-treeview {
+	background: #FFFFFF;
+}
+
+.procatalog .m-treeview li span {
+	cursor: pointer;
+}
+
+.procatalog .m-treeview li.m-expanded {
+	padding-left: 16px;
+	background: url('../images/treeview-expanded.gif') no-repeat 0 2px;
+}
+
+.procatalog .m-treeview li.m-expanded ul li {
+	list-style-image: url('../images/treeview-item.gif');
+}
+
+.procatalog .m-treeview li.m-collapsed {
+	padding-left: 16px;
+	background: url('../images/treeview-collapsed.gif') no-repeat 0 0;
+}
+
+.procatalog .m-treeview li.m-collapsed ul {
+	display: none;
+}
+
+/*右侧样式*/
+.content_right {
+	width: auto;
+	float: left;
+}
+
+/*滚动广告样式*/
+.content_right .ad {
+	width: 586px;
+	height: 150px;
+	overflow: hidden;
+	position: relative;
+}
+
+.content_right .slider,.content_right .num {
+	position: absolute;
+}
+
+.content_right .slider li {
+	list-style: none;
+	display: inline;
+}
+
+.content_right .slider img {
+	width: 586px;
+	height: 150px;
+	display: block;
+}
+
+.content_right .num {
+	right: 5px;
+	bottom: 5px;
+}
+
+.content_right .num li {
+	float: left;
+	color: #FF7300;
+	text-align: center;
+	line-height: 16px;
+	width: 16px;
+	height: 16px;
+	font-size: 12px;
+	cursor: pointer;
+	overflow: hidden;
+	margin: 3px 1px;
+	border: 1px solid #FF7300;
+	background-color:  #FFFFFF;
+}
+
+.content_right .num li.on {
+	color: #FFFFFF;
+	line-height: 21px;
+	width: 21px;
+	height: 21px;
+	font-size: 16px;
+	margin: 0px 1px;
+	border: 0px;
+	background-color: #FF7300;
+	font-weight: bold;
+}
+
+/*新款上市样式*/
+.content_right .prolist {
+	position: relative;
+	height: 220px;
+	overflow: hidden;
+	border: 1px solid #AAAAAA;
+	background: #FFFFFF;
+	margin-top: 32px;
+}
+
+.content_right .prolist .prolist_content {
+ 	position: absolute;
+	width: 1800px;
+	top: 26px;
+	left: 0px;
+	padding: 20px 0 0 8px;
+}
+
+.content_right .prolist ul {
+	float: left;
+	height: 220px;
+}
+
+.content_right .prolist ul li {
+	float: left;
+	display: inline;
+	text-align: center;
+	margin-right: 22px;
+}
+
+.content_right .prolist ul li span {
+	display: block;
+	overflow: hidden;
+}
+
+.content_right .prolist ul li img {
+	display: block;
+	width: 124px;
+	height: 124px;
+	background: #EEE; border: 0;
+}
+
+.module_left_right {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	cursor: pointer;
+}
+
+/*footer*/
+footer {
+	border-top: 1px solid #CCCCCC;
+	width: auto;
+	margin: 10px 100px 0px 100px;
+	padding: 5px 0px 0px 0px;
+	text-align: center;
+}
+
+/* tooltip */
+#tooltip {
+	position: absolute;
+	border: 1px solid #333;
+	background: #f7f5d1;
+	padding: 1px;
+	color: #333;
+	display: none;
+}
+
+/* imgHover */
+span.imageMask {
+	background: white;
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+}
+
+span.imageOver {
+	background: url(../images/zoom.gif) no-repeat 50% 50%;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	-khtml-opacity: 0.6;
+	opacity: 0.6;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>查找节点</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<script type="text/javascript" src="../jquery-1.8.3.js"></script>
+<script type="text/javascript">
+	$(function() {
+		//查找节点
+		$('#button_find').click(function() {
+			var li_2 = $('ul li:eq(1)').attr('title');
+			alert(li_2);
+			return false;
+		});
+
+		//创建节点
+		$('#button_create').click(function() {
+			var $li_1 = $('<li></li>');
+			var $li_2 = $('<li>创建的第二个元素</li>');
+			var $li_3 = $('<li title="创建的第二个元素">创建的第二个元素</li>');
+			$('ul').append($li_1).append($li_2).append($li_3);
+			return false;
+		});
+
+		//插入节点
+		$('#button_insert').click(function() {
+			var $new_li1 = $('<li>新节点1</li>');
+			var $new_li2 = $('<li>新节点2</li>');
+			var $h1 = $('<h1>新节点</h1>');
+			$new_li1.appendTo($('ul'));
+			$new_li2.prependTo($('ul'));
+			$('ul').before($h1);
+			return false;
+		});
+
+		//移动节点
+		$('#button_move').click(function() {
+			var $last_element = $('li:last');
+			$last_element.insertBefore('li:first');
+			return false;
+		});
+
+		//删除节点
+		$('#button_delete').click(function() {
+			var $last_element = $('li:last').remove();
+			// $last_element.appendTo('ul');
+			return false;
+		});
+
+		//清空节点
+		$('#button_empty').click(function() {
+			var $ul = $('ul').empty();
+			return false;
+		});
+
+		//复制节点
+		$('#button_copy').click(function() {
+			var $last_element = $('li:last');
+			$last_element.clone().appendTo('ul');
+			return false;
+		});
+
+		//替换节点
+		$('#button_replace').click(function() {
+			$('p').replaceWith('<strong>前段的三把锋利的尖刀</strong>');
+			return false;
+		});
+
+		//包裹节点
+		$('#button_wrap').click(function() {
+			$('ul li').wrapInner('<em></em>');
+			return false;
+		});
+	});
+</script>
+</head>
+<body>
+    <p title="前段的三把锋利的尖刀">前段的三把锋利的尖刀</p>
+    <ul>
+    	<li title="html">html</li>
+    	<li title="css">css</li>
+    	<li title="Javascript">Javascript</li>
+    </ul>
+    <div>
+    	<button id="button_find">查找节点</button>
+    	<button id="button_create">创建节点</button>
+    	<button id="button_insert">插入节点</button>
+    	<button id="button_move">移动节点</button>
+    	<button id="button_delete">删除节点</button>
+    	<button id="button_empty">清空节点</button>
+    	<button id="button_copy">复制节点</button>
+    	<button id="button_replace">替换节点</button>
+    	<button id="button_wrap">包裹节点</button>
+    </div>
+</body>
+</html>

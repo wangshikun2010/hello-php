@@ -21,14 +21,27 @@ $(function() {
 
 		var input = $('#appendedInputButton');
 		var search_text = input.val();
-		var display = $('table tbody tr td:eq(1)').filter(':contains('+search_text+')');
+		var selected_tr = $('table tbody tr');
 		// console.log(display.length);
-		if (display.length > 0) {
-			$('table tbody tr').hide()
-			.filter(':contains('+search_text+')').show();
-		} else {
-			$('table tbody tr').hide();
-			$('table').after('<div id="not-search">没有你所搜索的内容</div>');
-		}
+		var index_text = search_text.toUpperCase();
+		// console.log(index_text);
+
+		input.val('');
+
+		selected_tr.each(function() {
+			var $self = $(this);
+			var text_1 = $self.find('td:eq(1)').text();
+			// console.log(text_1.toUpperCase());
+			text_1.toUpperCase();
+
+			if (text_1.indexOf(index_text) !== -1) {
+				$self.show();
+			} else {
+				$self.hide();
+				if ($self.length < 1) {
+					$('table').after('<div id="not-search">没有你所搜索的内容</div>');
+				}
+			}
+		});
 	}
 });

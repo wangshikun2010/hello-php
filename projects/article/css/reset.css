@@ -10,13 +10,16 @@ body,input,option {
 	background: #D4D4D4;
 }
 
-.current {
+.active {
 	background: #D4D4D4;
 }
 
 #input-search {
-	margin-top: 8px;
 	float: right;
+}
+
+#input-search #search {
+	font-family: 'Microsoft Yahei', Verdana;
 }
 
 #not-search {

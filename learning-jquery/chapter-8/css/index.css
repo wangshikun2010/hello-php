@@ -182,6 +182,7 @@ html {
 	color: #FFFFFF;
 	line-height: 26px;
 	text-indent: 10px;
+	cursor: pointer;
 }
 
 .content_left .news ul {

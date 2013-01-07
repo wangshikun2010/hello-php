@@ -8,6 +8,8 @@ $(function() {
 	tree();
 
 	slide_displsy_img();
+
+	imgSlide();
 });
 
 // 网站换肤
@@ -129,4 +131,40 @@ function slide_displsy_img() {
 		$(".slider").stop(true,false).animate({top : -adHeight * index}, 1000);
 		$(".num li").removeClass("on").eq(index).addClass("on");
 	}
+}
+
+// 新款上市模块横向滚动
+function imgSlide() {
+	var page = 1;
+	var page_size = 4;
+	var len = $(".prolist_content ul li").length;
+	var page_count = Math.ceil(len / page_size);
+	var prolist_width = $(".prolist").width();
+	var $parent = $(".prolist_content");
+
+	// 向右按钮
+	$(".goRight").click(function() {
+		if(!$parent.is(":animated")) {
+			if(page == page_count ){ //已经到最后一个版面了,如果再向后，必须跳转到第一个版面。
+				$parent.animate({ left : 0}, 800);
+				page = 1;
+			} else {
+				$parent.animate({ left : '-='+prolist_width}, 800);
+				page++;
+			}
+		}
+	});
+
+	//往左按钮
+	$(".goLeft").click(function() {
+		if( !$parent.is(":animated") ) {
+			if( page == 1 ){ //已经到第一个版面了,如果再向前，必须跳转到最后一个版面。
+				$parent.animate({ left : '-='+prolist_width*(page_count-1)}, 800); //通过改变left值，跳转到最后一个版面
+				page = page_count;
+			} else {
+				$parent.animate({ left : '+='+none_unit_width }, 800);
+				page--;
+			}
+		}
+	});
 }

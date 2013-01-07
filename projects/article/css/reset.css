@@ -14,11 +14,7 @@ body,input,option {
 	background: #D4D4D4;
 }
 
-#input-search {
-	float: right;
-}
-
-#input-search #search {
+#search-button {
 	font-family: 'Microsoft Yahei', Verdana;
 }
 

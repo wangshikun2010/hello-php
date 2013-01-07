@@ -6,12 +6,12 @@ $(function() {
 		// return false;
 	});
 
-	$('#input-search').submit(function() {
+	$('#search-form').submit(function() {
 		search_content();
 		return false;
 	});
 
-	$('#search').click(function() {
+	$('#search-button').click(function() {
 		search_content();
 		return false;
 	});
@@ -19,7 +19,7 @@ $(function() {
 	function search_content() {
 		$('table').nextAll('#not-search').remove();
 
-		var input = $('#appendedInputButton');
+		var input = $('#keyword');
 		var search_text = input.val();
 		var selected_tr = $('table tbody tr');
 		// console.log(display.length);

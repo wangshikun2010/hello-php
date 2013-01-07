@@ -27,7 +27,7 @@
 		</ul>
 	</div>
 </div>
-<form class="input-append" id="input-search" action='' method="post">
-	<input class="span2" id="appendedInputButton" type="text">
-	<input class="btn" type="submit" id="search" value="搜索" />
+<form class="input-append pull-right" id="search-form" action='' method="post">
+	<input class="span2" name="keyword" id="keyword" type="text">
+	<input class="btn" type="submit" id="search-button" value="搜索" />
 </form>

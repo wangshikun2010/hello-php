@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>图片滚动</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<script type="text/javascript" src="../jquery-1.8.3.js"></script>
+<style type="text/css">
+	#demo {
+		background: #FFFFFF;
+		overflow: hidden;
+		border: 1px dashed #CCCCCC;
+		width: 500px;
+	}
+
+	#demo img {
+		border: 2px solid #F2F2F2;
+		width: 50px;
+		height: 30px;
+	}
+
+	#indemo {
+		float: left;
+		width: 800%;
+	}
+
+	#demo1 {
+		float: left;
+	}
+
+	#demo2 {
+		float: left;
+	}
+</style>
+<script>
+	$(function() {
+		var demo = $("#demo");
+		var demo1 = $("#demo1");
+		var demo2 = $("#demo2");
+
+		demo2.html(demo1.html());
+		function Marquee() {
+
+			if (demo.scrollLeft() >= demo1.width()) {
+				demo.scrollLeft(0);
+			} else{
+				demo.scrollLeft(demo.scrollLeft()+1);
+			}
+		}
+
+		var MyMar = setInterval(Marquee,10);
+		demo.mouseover(function() {
+			clearInterval(MyMar);
+		})
+		demo.mouseout(function() {
+			MyMar = setInterval(Marquee,10);
+		})
+	});
+</script>
+</head>
+<body>
+<div id="demo">
+	<div id="indemo">
+		<div id="demo1">
+			<a href="#"><img src="./img/1.gif"/></a>
+			<a href="#"><img src="./img/2.gif"/></a>
+			<a href="#"><img src="./img/3.gif"/></a>
+			<a href="#"><img src="./img/4.gif"/></a>
+			<a href="#"><img src="./img/5.gif"/></a>
+		</div>
+		<div id="demo2"></div>
+	</div>
+</div>
+</body>
+</html>

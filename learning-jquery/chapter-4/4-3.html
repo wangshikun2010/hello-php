@@ -5,120 +5,120 @@
 <title>jQuery实现带缩略图的焦点图滚动效果</title>
 <style type="text/css">
 * {
-	margin: 0;
-	padding: 0;
-	font: 'Microsoft yahei';
+    margin: 0;
+    padding: 0;
+    font: 'Microsoft yahei';
 }
 
 h2 {
-	text-align: center;
+    text-align: center;
 }
 
 img {
-	border: none;
+    border: none;
 }
 
 .imgSilder {
-	width: 586px;
-	overflow: hidden;
-	margin: 0 auto;
+    width: 586px;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .imgSilder .imgflash {
-	width: 586px;
-	height: 150px;
-	overflow: hidden;
-	position: relative;
+    width: 586px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
 }
 
 .imgflash .mask {
-	height: 32px;
-	line-height: 32px;
-	background: #000000;
-	width: 100%;
-	text-align: right;
-	position: absolute;
-	left: 0;
-	bottom: -32px;
-	filter: alpha(opacity=70);
-	-moz-opacity: 0.7;
-	opacity: 0.7;
-	overflow: hidden;
+    height: 32px;
+    line-height: 32px;
+    background: #000000;
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    left: 0;
+    bottom: -32px;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+    overflow: hidden;
 }
 
 .imgflash .mask img {
-	vertical-align: middle;
-	margin-right: 10px;
-	cursor: pointer;
-	width: 60px;
-	height: 22px;
+    vertical-align: middle;
+    margin-right: 10px;
+    cursor: pointer;
+    width: 60px;
+    height: 22px;
 }
 
 .imgflash .mask img.show {
-	margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 </style>
 </head>
 <body>
-	<h2>jQuery实现带缩略图的焦点图滚动效果</h2>
-	<div class="imgSilder">
-		<div class="imgflash">
-			<a href="#"><img class="bigImg"/></a>
-			<div class="mask">
-				<img src="img/1.gif"/>
-				<img src="img/2.gif"/>
-				<img src="img/3.gif"/>
-				<img src="img/4.gif"/>
-				<img src="img/5.gif"/>
-			</div>
-		</div>
-	</div>
+    <h2>jQuery实现带缩略图的焦点图滚动效果</h2>
+    <div class="imgSilder">
+        <div class="imgflash">
+            <a href="#"><img class="bigImg"/></a>
+            <div class="mask">
+                <img src="img/1.gif"/>
+                <img src="img/2.gif"/>
+                <img src="img/3.gif"/>
+                <img src="img/4.gif"/>
+                <img src="img/5.gif"/>
+            </div>
+        </div>
+    </div>
 <script type="text/javascript" src="../jquery-1.8.3.js"></script>
 <script type="text/javascript">
 $(function() {
-	$(".imgflash").each(function() {
-		var $img = $(".imgflash .mask img");
+    $(".imgflash").each(function() {
+        var $img = $(".imgflash .mask img");
 
-		$img.click(function() {
-			var index = $img.index($(this));
-			changeImg(index);
-		}).eq(0).click();
+        $img.click(function() {
+            var index = $img.index($(this));
+            changeImg(index);
+        }).eq(0).click();
 
-		$(this).find(".mask").animate({
-			"bottom":"0"
-		},700);
+        $(this).find(".mask").animate({
+            "bottom":"0"
+        },700);
 
-		$(this).hover(function() {
-			clearInterval(timer);
-		},function() {
-			timer = setInterval(function() {
-				var show = $(".imgflash .mask img.show").index();
-				if (show >= $img.length-1) {
-					show = 0;
-				} else {
-					show++;
-				}
-				changeImg(show);
-			},3000);
-		});
+        $(this).hover(function() {
+            clearInterval(timer);
+        },function() {
+            timer = setInterval(function() {
+                var show = $(".imgflash .mask img.show").index();
+                if (show >= $img.length-1) {
+                    show = 0;
+                } else {
+                    show++;
+                }
+                changeImg(show);
+            },3000);
+        });
 
-		function changeImg(index) {
-			$img.removeClass("show").eq(index).addClass("show");
-			$(".imgflash .bigImg").parents("a").attr("href",$img.eq(index).attr("src"));
-			$(".imgflash .bigImg").hide().attr("src",$img.eq(index).attr("src")).fadeIn("slow");
-		}
+        function changeImg(index) {
+            $img.removeClass("show").eq(index).addClass("show");
+            $(".imgflash .bigImg").parents("a").attr("href",$img.eq(index).attr("src"));
+            $(".imgflash .bigImg").hide().attr("src",$img.eq(index).attr("src")).fadeIn("slow");
+        }
 
-		timer = setInterval(function() {
-			var show = $(".imgflash .mask img.show").index();
-			if (show >= $img.length-1) {
-				show = 0;
-			} else {
-				show++;
-			}
-			changeImg(show);
-		},3000);
-	});
+        timer = setInterval(function() {
+            var show = $(".imgflash .mask img.show").index();
+            if (show >= $img.length-1) {
+                show = 0;
+            } else {
+                show++;
+            }
+            changeImg(show);
+        },3000);
+    });
 
 });
 </script>

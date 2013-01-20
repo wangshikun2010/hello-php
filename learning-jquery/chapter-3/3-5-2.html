@@ -9,114 +9,114 @@
 <link href="./css/3-5.css" rel="stylesheet">
 <script type="text/javascript" src="../jquery-1.8.3.js"></script>
 <script type="text/javascript">
-	$(function() {
-		// $('input:text:first').focus(); //把焦点放在第一个文本框
-		var ul = $('#todo-list');
-		var text = $('#text');
-		var select_all = $('#select-all');
+    $(function() {
+        // $('input:text:first').focus(); //把焦点放在第一个文本框
+        var ul = $('#todo-list');
+        var text = $('#text');
+        var select_all = $('#select-all');
 
-		function update_footer() {
-			var checked_count = $('input[name="item"]:checked').length;
-			$('#stats').text('完成' + checked_count + '项');
-			$('#clear-all').text('清除已完成的' + checked_count + '个项目');
-		}
+        function update_footer() {
+            var checked_count = $('input[name="item"]:checked').length;
+            $('#stats').text('完成' + checked_count + '项');
+            $('#clear-all').text('清除已完成的' + checked_count + '个项目');
+        }
 
-		$('form').submit(function(event) {
-			var input_text = text.val();
-			var li = $('<li><div class="view"><input type="checkbox" name="item"><label></label></div></li>');
+        $('form').submit(function(event) {
+            var input_text = text.val();
+            var li = $('<li><div class="view"><input type="checkbox" name="item"><label></label></div></li>');
 
-			// 显示隐藏的元素
-			$('#label-all, #footer').show();
+            // 显示隐藏的元素
+            $('#label-all, #footer').show();
 
-			// 添加新项目到ul
-			var id = 'todo-' + (new Date).getTime();
-			li.find('input:checkbox').attr('id', id).end()
-				.find('label').attr('for', id).text(input_text);
+            // 添加新项目到ul
+            var id = 'todo-' + (new Date).getTime();
+            li.find('input:checkbox').attr('id', id).end()
+                .find('label').attr('for', id).text(input_text);
 
-			// 单个TODO单击时,切换完成状态,并更新计数
-			li.find('input[type=checkbox]').change(function(event) {
-				// 更新li的样式
-				var checkbox = $(this);
-				if (checkbox.attr('checked')) {
-					checkbox.next('label').attr('class','selected');
-				} else {
-					checkbox.next('label').removeAttr('class');
-				}
+            // 单个TODO单击时,切换完成状态,并更新计数
+            li.find('input[type=checkbox]').change(function(event) {
+                // 更新li的样式
+                var checkbox = $(this);
+                if (checkbox.attr('checked')) {
+                    checkbox.next('label').attr('class','selected');
+                } else {
+                    checkbox.next('label').removeAttr('class');
+                }
 
-				if (ul.find('input:checkbox:not(:checked)').length === 0) {
-					select_all.attr('checked', true);
-				} else {
-					select_all.attr('checked', false);
-				}
+                if (ul.find('input:checkbox:not(:checked)').length === 0) {
+                    select_all.attr('checked', true);
+                } else {
+                    select_all.attr('checked', false);
+                }
 
-				update_footer();
+                update_footer();
 
-			});
+            });
 
-			li.find('label').dblclick(function() {
-				var form = $('<form><input type="text" class="edit"/></form>');
-				var label = $(this);
+            li.find('label').dblclick(function() {
+                var form = $('<form><input type="text" class="edit"/></form>');
+                var label = $(this);
 
-				label.parents('li').append(form);
-				label.parents('li').find('div').hide();
-				form.find('input').val(label.text()).focus();
-				form.submit(function(event) {
-					event.preventDefault();
-					label.text(form.find('input').val());
-					label.parents('li').find('div').show();
-					form.remove();
-				})
-			});
+                label.parents('li').append(form);
+                label.parents('li').find('div').hide();
+                form.find('input').val(label.text()).focus();
+                form.submit(function(event) {
+                    event.preventDefault();
+                    label.text(form.find('input').val());
+                    label.parents('li').find('div').show();
+                    form.remove();
+                })
+            });
 
-			li.hide().prependTo(ul);
-			li.fadeIn(500);
+            li.hide().prependTo(ul);
+            li.fadeIn(500);
 
-			// 添加之后将输入框的内容清空
-			text.val('');
+            // 添加之后将输入框的内容清空
+            text.val('');
 
-			event.preventDefault();
-		});
+            event.preventDefault();
+        });
 
-		// 选中全部或取消全部
-		$('#select-all').change(function() {
-			var checkboxes = $('input[name="item"]').attr('checked', this.checked);
-			if (this.checked) {
-				checkboxes.next('label').addClass('selected');
-			} else {
-				checkboxes.next('label').removeClass('selected');
-			}
-			update_footer();
-		});
+        // 选中全部或取消全部
+        $('#select-all').change(function() {
+            var checkboxes = $('input[name="item"]').attr('checked', this.checked);
+            if (this.checked) {
+                checkboxes.next('label').addClass('selected');
+            } else {
+                checkboxes.next('label').removeClass('selected');
+            }
+            update_footer();
+        });
 
-		$('#clear-all').click(function() {
-			ul.find('input:checked').parents('li').fadeOut(300, function() {
-				$(this).remove();
-				update_footer();
-			});
-			select_all.attr('checked', false);
-		});
+        $('#clear-all').click(function() {
+            ul.find('input:checked').parents('li').fadeOut(300, function() {
+                $(this).remove();
+                update_footer();
+            });
+            select_all.attr('checked', false);
+        });
 
-	})
+    })
 </script>
 </head>
 <body>
-	<div id="content">
-		<h2>待办事项</h2>
-		<form action="">
-			<input type="text" id="text" size="40" maxlength="50" placeholder="还有什么事没有做?" autofocus required autocomplete="off">
-			<button type="submit" id="submit"></button><br/>
-		</form>
+    <div id="content">
+        <h2>待办事项</h2>
+        <form action="">
+            <input type="text" id="text" size="40" maxlength="50" placeholder="还有什么事没有做?" autofocus required autocomplete="off">
+            <button type="submit" id="submit"></button><br/>
+        </form>
 
-		<label id="label-all">
-			<input type="checkbox" name="select-all" id="select-all" value="all">全部选中
-		</label>
+        <label id="label-all">
+            <input type="checkbox" name="select-all" id="select-all" value="all">全部选中
+        </label>
 
-		<ul id="todo-list"></ul>
+        <ul id="todo-list"></ul>
 
-		<div id="footer">
-			<span id="stats">完成0项</span>
-			<span id="clear-all">清除已完成的0个项目</span>
-		</div>
-	</div>
+        <div id="footer">
+            <span id="stats">完成0项</span>
+            <span id="clear-all">清除已完成的0个项目</span>
+        </div>
+    </div>
 </body>
 </html>

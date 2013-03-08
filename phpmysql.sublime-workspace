@@ -1,0 +1,1204 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tr",
+				"treeview"
+			],
+			[
+				"scroll",
+				"scrollNews"
+			],
+			[
+				"text",
+				"text_1"
+			],
+			[
+				"to",
+				"toUpperCase"
+			],
+			[
+				"par",
+				"parent"
+			],
+			[
+				"sear",
+				"search_text"
+			],
+			[
+				"sel",
+				"self"
+			],
+			[
+				"cont",
+				"content_h3"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"ba",
+				"background-position"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"fi",
+				"filter"
+			],
+			[
+				"magin",
+				"margin-top"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"mag",
+				"margin"
+			],
+			[
+				"todo",
+				"todo-li"
+			],
+			[
+				"create",
+				"create_todo"
+			],
+			[
+				"re",
+				"remove"
+			],
+			[
+				"sub",
+				"submit"
+			],
+			[
+				"che",
+				"checkbox"
+			],
+			[
+				"update",
+				"update_footer"
+			],
+			[
+				"chec",
+				"checkboxes"
+			],
+			[
+				"ani",
+				"animated"
+			],
+			[
+				"page",
+				"page_count"
+			],
+			[
+				"v_",
+				"v_show"
+			],
+			[
+				"v",
+				"v_show"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"ce",
+				"checked"
+			],
+			[
+				"check",
+				"checked"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"chek",
+				"checkbox-all"
+			],
+			[
+				"label",
+				"label-all"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"bloc",
+				"block"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"img",
+				"imgTitle"
+			],
+			[
+				"lis",
+				"list-style-type"
+			],
+			[
+				"cor",
+				"color"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"first",
+				"first_li"
+			],
+			[
+				"mod",
+				"modal"
+			],
+			[
+				"mo",
+				"modal_add_notebook"
+			],
+			[
+				"id",
+				"id"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"disp",
+				"display"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"list-",
+				"list-style-image"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"lisy",
+				"list-style-image"
+			],
+			[
+				"nav",
+				"navbar"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"a",
+				"a	<a href=\"mailto:\">"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"rep",
+				"repeat-x"
+			],
+			[
+				"url",
+				"url(image-url.gif)"
+			],
+			[
+				"date_de",
+				"date_default_timezone_set"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"exp",
+				"explame"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"html",
+				"htmlspecialchars"
+			],
+			[
+				"disk",
+				"disk_free_space"
+			],
+			[
+				"real",
+				"realpath  (function)"
+			],
+			[
+				"substr_",
+				"substr_replace  (function)"
+			],
+			[
+				"body",
+				"bodytag"
+			],
+			[
+				"preg",
+				"preg_replace_callback"
+			],
+			[
+				"preg_m",
+				"preg_match_all"
+			],
+			[
+				"abstra",
+				"abstract_method"
+			],
+			[
+				"Cap",
+				"Captcha  (class)"
+			],
+			[
+				"margin",
+				"marginLeft"
+			],
+			[
+				"for",
+				"for	for …"
+			],
+			[
+				"cate",
+				"categories"
+			],
+			[
+				"_",
+				"_POST"
+			],
+			[
+				"fget",
+				"fgetcsv"
+			],
+			[
+				"cater",
+				"category"
+			],
+			[
+				"ca",
+				"category"
+			],
+			[
+				"cat",
+				"categories"
+			],
+			[
+				"CATE",
+				"categories"
+			],
+			[
+				"new",
+				"new_category"
+			],
+			[
+				"CATEGORY",
+				"CATEGORY_DATA_FILE"
+			],
+			[
+				"catego",
+				"category_links"
+			],
+			[
+				"categ",
+				"category_links"
+			],
+			[
+				"student",
+				"students"
+			],
+			[
+				"stud",
+				"student"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"func_get_",
+				"func_get_argc"
+			],
+			[
+				"error_",
+				"error_reporting"
+			],
+			[
+				"cap",
+				"capitalic"
+			],
+			[
+				"Ar",
+				"ArticleCategory"
+			],
+			[
+				"lay",
+				"layout"
+			],
+			[
+				"result",
+				"results"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"min",
+				"minwidth"
+			],
+			[
+				"is_o",
+				"is_owner"
+			],
+			[
+				"endfo",
+				"endforeach"
+			],
+			[
+				"Buil",
+				"BuildingRoom"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"floo",
+				"floor"
+			],
+			[
+				"buil",
+				"building"
+			],
+			[
+				"php",
+				"php"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"under",
+				"underscore"
+			],
+			[
+				"build",
+				"building_block_id"
+			],
+			[
+				"building_id",
+				"building_id"
+			],
+			[
+				"ajax",
+				"ajax	Google AJAX Libraries: Dojo"
+			],
+			[
+				"building",
+				"building_id"
+			],
+			[
+				"Building",
+				"buildingBlock"
+			],
+			[
+				"is",
+				"isAjax"
+			],
+			[
+				"before",
+				"beforeRender"
+			],
+			[
+				"Bui",
+				"BuildingBlock"
+			],
+			[
+				"Build",
+				"Building"
+			],
+			[
+				"int",
+				"intval"
+			],
+			[
+				"res",
+				"results"
+			],
+			[
+				"afterF",
+				"afterFind"
+			],
+			[
+				"ro",
+				"room_count"
+			],
+			[
+				"floor",
+				"floor_count"
+			],
+			[
+				"build_",
+				"building_block_id"
+			],
+			[
+				"crete",
+				"created"
+			],
+			[
+				"User",
+				"UserProfile"
+			],
+			[
+				"inse",
+				"insertAfter"
+			],
+			[
+				"inser",
+				"insertBefore"
+			],
+			[
+				"print_",
+				"print_array"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 335.0,
+		"selected_items":
+		[
+			[
+				"save",
+				"File: Save All"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"sy",
+				"Set Syntax: HTML5"
+			],
+			[
+				"sav",
+				"File: Save All"
+			],
+			[
+				"todo",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"settings",
+				"Preferences: Settings - User"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"tod",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"create ",
+				"Gist: Create Public Gist"
+			],
+			[
+				"gist",
+				"Gist: Create Public Gist"
+			],
+			[
+				"li",
+				"Package Control: List Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ter",
+				"Preferences: Terminal Key Bindings – Default"
+			],
+			[
+				"termi",
+				"Preferences: Terminal Key Bindings – User"
+			],
+			[
+				"to",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"list ",
+				"Package Control: List Packages"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Git: Init"
+			],
+			[
+				"z",
+				"Zen Coding: Zen as you type"
+			],
+			[
+				"zen",
+				"Zen Coding: Wrap zen as you type"
+			],
+			[
+				"thml",
+				"Tidy HTML"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"git sa",
+				"Git: Status"
+			],
+			[
+				"repase",
+				"DocBlockr: Reparse comment block"
+			],
+			[
+				"do",
+				"DocBlockr: Reparse comment block"
+			],
+			[
+				"doc",
+				"DocBlockr: Reparse comment block"
+			],
+			[
+				"TO",
+				"Show TODOs: Open files only"
+			],
+			[
+				"sava",
+				"Project: Save As"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"git r",
+				"Git: Graph Current File"
+			],
+			[
+				"git s",
+				"Git: Status"
+			],
+			[
+				"package",
+				"Package Control: Discover Packages"
+			],
+			[
+				"TODO",
+				"Show TODOs: Open files only"
+			],
+			[
+				"show",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"ali",
+				"Preferences: Alignment File Settings – Default"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"sta",
+				"Stackoverflow: Search from Input"
+			],
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"Snippet: Create a skeleton test method with a data provider"
+			],
+			[
+				"ze",
+				"Zen Coding: Split or join tag"
+			],
+			[
+				"align",
+				"Preferences: Alignment File Settings – Default"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pa in",
+				"Package Control: Install Package"
+			],
+			[
+				"pa li",
+				"Package Control: List Packages"
+			],
+			[
+				"packa in",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 522.0
+	},
+	"console":
+	{
+		"height": 266.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/imgSlide.js",
+		"/D/htdocs/wangshikun-php/learning-jquery/chapter-8/css/index.css",
+		"/D/htdocs/wangshikun-php/learning-jquery/chapter-8/scripts/index.js",
+		"/D/htdocs/wangshikun-php/learning-jquery/chapter-8/index.html",
+		"/E/Downloads/第4章/代码清单4-1.html",
+		"/E/Downloads/第5章/脚本文件/代码清单5-17/script.js",
+		"/D/htdocs/wangshikun-php/jQuery/4/4-2.html",
+		"/D/htdocs/wangshikun-fe/javascriptDOM编程/第4,5,6章 javascript美术馆/function.js",
+		"/D/htdocs/wangshikun-fe/javascriptDOM编程/第4,5,6章 javascript美术馆/javascript美术馆.html",
+		"/E/TDDOWNLOAD/AdobephotoshopCS5/AdobephotoshopCS5/payloads/Microsoft_VC80_ATL_x86/Microsoft_VC80_ATL_x86.proxy.xml",
+		"/D/xampp/mysql/share/charsets/geostd8.xml",
+		"/D/htdocs/wangshikun-fe/html/Html与CSS入门经典/african/elephant.html",
+		"/D/htdocs/wangshikun-fe/html/Html与CSS入门经典/第二十一章.html",
+		"/D/htdocs/wangshikun-fe/html/Html与CSS入门经典/第二十二章.html",
+		"/D/htdocs/wangshikun-fe/html/Html与CSS入门经典/第五章-使用列表/style-1.html",
+		"/D/htdocs/wangshikun-php/learning-jquery/chapter-4/4-5.html",
+		"/D/htdocs/wangshikun-php/learning-jquery/chapter-4/4-1.html",
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/imgHover.js",
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/finish.js",
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/ad.js",
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/changeSkin.js",
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/jquery.cookie.js",
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/nav.js",
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/scroll.js",
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/sizeAndprice.js",
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/slide.js",
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/star.js",
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/switchColor.js",
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/switchImg.js",
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/tab.js",
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/tooltip.js",
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/tree.js",
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/use_jqzoom.js",
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/jquery.js",
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/jquery.thickbox.js",
+		"/D/htdocs/wangshikun-php/projects/article/index.php",
+		"/D/htdocs/wangshikun-php/projects/article/js/article.js",
+		"/D/htdocs/wangshikun-php/projects/article/links.csv",
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/jquery.livequery.js",
+		"/D/htdocs/wangshikun-php/jQuery/8/scripts/jquery.jqzoom.js",
+		"/D/htdocs/wangshikun-php/projects/article/header.php",
+		"/D/htdocs/wangshikun-php/projects/article/footer.php",
+		"/D/htdocs/wangshikun-php/projects/article/css/reset.css",
+		"/D/htdocs/wangshikun-php/projects/article/display.php",
+		"/D/htdocs/wangshikun-php/projects/article/js/jquery-1.8.3.js",
+		"/D/htdocs/wangshikun-php/projects/article/js/jquery-latest.js",
+		"/D/htdocs/wangshikun-php/jQuery/chapter-8/index.html",
+		"/D/htdocs/wangshikun-php/jQuery/chapter-8/scripts/index.js",
+		"/D/htdocs/wangshikun-php/jQuery/chapter-8/css/index.css",
+		"/D/htdocs/wangshikun-php/jQuery/chapter-8/css/skin/skin_0.css",
+		"/D/htdocs/wangshikun-php/jQuery/chapter-8/css/skin/skin_1.css",
+		"/D/htdocs/wangshikun-php/jQuery/chapter-8/css/skin/skin_2.css",
+		"/D/htdocs/wangshikun-php/jQuery/chapter-8/css/skin/skin_3.css",
+		"/D/htdocs/wangshikun-php/jQuery/chapter-8/css/skin/skin_4.css",
+		"/D/htdocs/wangshikun-php/jQuery/chapter-8/css/skin/skin_5.css",
+		"/D/htdocs/wangshikun-php/jQuery/8/css/index.css",
+		"/D/htdocs/wangshikun-php/jQuery/8/index.html",
+		"/D/htdocs/wangshikun-php/projects/evernote/js/app.js",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo11-网页换肤/demo5.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo11-网页换肤/css/default.css",
+		"/D/htdocs/wangshikun-php/jQuery/8/css/skin/skin_0.css",
+		"/D/htdocs/wangshikun-php/jQuery/5/5-1.html",
+		"/D/htdocs/wangshikun-php/jQuery/8/detail.html",
+		"/D/htdocs/wangshikun-php/jQuery/8/styles/thickbox.css",
+		"/D/htdocs/wangshikun-php/jQuery/8/styles/detail.css",
+		"/D/htdocs/wangshikun-php/jQuery/8/styles/index.css",
+		"/D/htdocs/wangshikun-php/jQuery/4/4-1.html",
+		"/D/htdocs/wangshikun-php/jQuery/4/4-5.html",
+		"/D/htdocs/wangshikun-php/jQuery/4/4-4.html",
+		"/D/htdocs/wangshikun-php/jQuery/8/styles/main.css",
+		"/D/htdocs/wangshikun-php/jQuery/8/styles/nav.css",
+		"/D/htdocs/wangshikun-php/jQuery/8/styles/header.css",
+		"/D/htdocs/wangshikun-php/jQuery/8/styles/base.css",
+		"/D/htdocs/wangshikun-php/jQuery/8/styles/skin/skin_1.css",
+		"/D/htdocs/wangshikun-php/projects/article/js/jquery.js",
+		"/D/htdocs/wangshikun-php/projects/article/css/index.css",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo11-网页换肤/demo1.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo11-网页换肤/css/skin_3.css",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo11-网页换肤/css/skin_5.css",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo11-网页换肤/js/jquery.cookie.js",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo11-网页换肤/demo4.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo11-网页换肤/demo3.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo11-网页换肤/demo2.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo10-选项卡/demo3.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo10-选项卡/demo2.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo10-选项卡/demo1.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo9-控制字体大小/demo1.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo9-控制字体大小/demo2.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo8-表格内容过滤/demo3.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo8-表格内容过滤/demo2.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo8-表格内容过滤/demo1.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo7-表格展开伸缩/demo2.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo7-表格展开伸缩/demo1.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo6-表格变色/demo6.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo6-表格变色/demo5.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo6-表格变色/demo4.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo6-表格变色/demo3.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo6-表格变色/demo2.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo6-表格变色/demo1.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo5-表单验证/demo6.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo5-表单验证/css/style.css",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo5-表单验证/demo5.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo5-表单验证/demo4.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo5-表单验证/demo3.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo5-表单验证/demo2.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo5-表单验证/demo1.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo4-下拉框左右选择/demo1.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo3-复选框全选反选/demo3.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo3-复选框全选反选/demo2.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo3-复选框全选反选/demo1.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo2-多行文本框高度变化/demo2-文本框内容滚动.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo2-多行文本框高度变化/demo1-2文本框高度变化.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo2-多行文本框高度变化/demo1-1文本框高度变化.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo1-文本框得到失去焦点/demo2.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/05第五章/第五章例子/demo1-文本框得到失去焦点/demo1.html",
+		"/D/htdocs/wangshikun-php/jQuery/4/4-3.html",
+		"/D/htdocs/wangshikun-php/jQuery/3/css/3-5.css",
+		"/D/htdocs/wangshikun-php/jQuery/3/3-5.html",
+		"/D/htdocs/wangshikun-php/jQuery/3/3-5-2.html",
+		"/E/Downloads/index.htm",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/04第四章/第四章例子/10-实例/demo3-正确实例.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/04第四章/第四章例子/10-实例/demo2-连续点击带bug.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/04第四章/第四章例子/10-实例/demo1-初始化.html",
+		"/D/htdocs/wangshikun-php/jQuery/3/3-2.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/04第四章/第四章例子/10-实例/style.css",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/04第四章/css/style.css",
+		"/D/htdocs/wangshikun-php/jQuery/3/3-4.html",
+		"/D/htdocs/wangshikun-php/jQuery/《锋利的jquery》实例源码/实例下载/04第四章/第四章例子/9-动画/panel15-animate仿其他方法.html"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"m-treeview",
+			"<h3>",
+			"$(this)",
+			"display[i]",
+			"$(this)",
+			"current",
+			".display",
+			"fff",
+			":",
+			"eee",
+			"m-collapsed",
+			"m-expanded",
+			"<a href=\"detail.html\">",
+			"background-position:",
+			":",
+			"}",
+			":",
+			"}",
+			";",
+			"{",
+			":",
+			"}",
+			";",
+			"{",
+			":",
+			";",
+			"}",
+			"{",
+			"}",
+			"mid",
+			"btm",
+			"top",
+			"}",
+			"{",
+			"border=\"0\"",
+			"javascript void(0)",
+			"label.parents('li')",
+			"current",
+			"v_content",
+			"v_caption",
+			"v_show",
+			"i",
+			"input_text",
+			"todo_list",
+			"todo-list",
+			"surplus",
+			"input[name=\"item\"]",
+			"checkbox-all",
+			"delete-li",
+			"\"",
+			"checked",
+			"<span>播放 <em>57,865</em></span>",
+			"<span>播放:<em>33,326</em></span>",
+			"<span>播放:<em>28,276</em></span>",
+			"</h4>",
+			"<h4>",
+			":",
+			"{",
+			"}",
+			";",
+			"}",
+			"borders",
+			"icon",
+			"theme",
+			"even",
+			";\n",
+			"lable",
+			"20px",
+			"notebook",
+			"add-notebook",
+			"\"name\"",
+			"_",
+			"-",
+			"_",
+			"request",
+			"inputEmail",
+			"container",
+			"#span-2",
+			"30px",
+			"class",
+			"id",
+			"#",
+			"id",
+			"navbar",
+			"#",
+			"span",
+			">",
+			"</a>",
+			"<a",
+			"class",
+			"id",
+			"class",
+			"));",
+			"'10-161.php'",
+			"10-16.php",
+			"]",
+			"[",
+			"=>",
+			"。",
+			"\"",
+			"// 赋值:",
+			"\"",
+			"/",
+			"'",
+			"b",
+			"array",
+			"name",
+			"acronym",
+			"line",
+			"[",
+			"width",
+			",  ",
+			"60, 120",
+			"0,",
+			"0,100",
+			"120,200",
+			"width",
+			"$image",
+			"200,255",
+			"100,255",
+			"']",
+			"['",
+			"url",
+			"']",
+			"['",
+			"link",
+			"links",
+			"link"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"headers",
+			"category_id",
+			"",
+			"../../img/",
+			"Microsoft Yahei",
+			"$enums['",
+			"',",
+			"'",
+			"\",",
+			"\",\\n",
+			"\"",
+			"\" => \"",
+			"",
+			"D:\\",
+			"E:\\xampp\\",
+			"",
+			"$this->service",
+			"protected function _get",
+			"G",
+			"==",
+			", '",
+			" = ",
+			"=",
+			"_g",
+			"// ",
+			" = ",
+			"=> ",
+			" <=",
+			" = ",
+			" = $1",
+			" = $0",
+			" = $1$2",
+			" = $1",
+			" = \\1",
+			" = \\0",
+			" = \\1",
+			", $",
+			"try {",
+			"if ("
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 38.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.git":
+	{
+		"height": 144.0
+	},
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/E/Documents/工作档案/如何在IIS上面配置CakePHP/php.ini"
+			],
+			[
+				"default",
+				"app/View/Layouts/default.ctp"
+			],
+			[
+				"core.php",
+				"app/Config/core.php"
+			],
+			[
+				"admin_index.ctp",
+				"app/View/Users/admin_index.ctp"
+			],
+			[
+				"images",
+				"protected/lib/services/ImageService.php"
+			],
+			[
+				"sear",
+				"protected/modules/default/controllers/SearchController.php"
+			],
+			[
+				"indexc",
+				"protected/modules/default/controllers/IndexController.php"
+			],
+			[
+				"searchcon",
+				"protected/modules/default/controllers/SearchController.php"
+			],
+			[
+				"hammerjs",
+				"/D/xampp/htdocs/iscroll/examples/hammerjs/index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/D/htdocs/360buy/360buy.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true
+}

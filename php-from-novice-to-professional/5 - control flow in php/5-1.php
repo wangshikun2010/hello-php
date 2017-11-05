@@ -13,7 +13,7 @@
     	$cost = 1001;
     	if ($cost > 100) {
     		echo "太贵了，买不起<br/>";
-    		echo "价钱是：$cost";
+    		echo "价钱是：$cost".$cost;
     	}
     ?>
 </body>

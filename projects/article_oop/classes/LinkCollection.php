@@ -14,7 +14,7 @@ class LinkCollection {
 	);
 
 	public function __construct($filename) {
-		$handle = fopen($filename, 'r');
+		$handle = fopen($filename, 'a+');
 		while (($values = fgetcsv($handle, 4096, ",")) !== false) {
 			$link = new Link(array_combine($this->keys, $values));
 			$this->links[$link->id] = $link;
@@ -104,12 +104,12 @@ class LinkCollection {
 	}
 }
 
-//$collection = new LinkCollection('../links.csv');
+$collection = new LinkCollection('../links.csv');
 // var_dump($collection->read());
 // var_dump($collection->read('1'));
 // var_dump($collection->read(1));
 // var_dump($collection->read('2'));
-//var_dump($collection->delete(1));
+// var_dump($collection->delete(1));
 
 
 // var_dump($collection->add(new Link(array(
@@ -122,7 +122,7 @@ class LinkCollection {
 
 // var_dump($collection->read());
 
-// $link = $collection->read(3);
-// $link->title = 'title';
+$link = $collection->read(3);
+$link->title = 'title';
 // var_dump($collection->edit(3, $link));
 // var_dump($collection->read());

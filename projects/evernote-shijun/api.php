@@ -16,6 +16,8 @@ if (isset($_GET['class'])) {
 	unset($_GET['class']);
 }
 
+var_dump($class);
+
 if (isset($_GET['method'])) {
 	$method = trim($_GET['method']);
 	unset($_GET['method']);

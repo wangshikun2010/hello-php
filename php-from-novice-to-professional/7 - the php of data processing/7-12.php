@@ -4,7 +4,7 @@
 //strlen(string);
 $string1 = "abcde";
 $string2 = "wang shi kun";
-$string3 = "王仕昆的";
+$string3 = "王仕昆";
 echo "字符串".$string1."的长度: ";
 echo strlen($string1)."<br/>";
 echo "字符串".$string2."的长度: ";

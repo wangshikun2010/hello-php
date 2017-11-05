@@ -125,6 +125,6 @@ class CategoryCollection {
 	}
 }
 
-// $collection = new CategoryCollection('../categories.csv');
-// var_dump($collection->read());
-// var_dump($collection->delete(2));
+$collection = new CategoryCollection('../categories.csv');
+var_dump($collection->read());
+var_dump($collection->delete(2));

@@ -19,7 +19,7 @@ if (isset($_GET['category_id'])) {
 	}
 	$links = $category_links;
 }
-//debug($links);
+// debug($links);
 
 ?>
 
